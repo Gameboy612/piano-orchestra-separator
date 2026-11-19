@@ -37,9 +37,10 @@ audio{width:100%;margin-top:10px}
 .range{display:flex;gap:10px;align-items:flex-end;flex-wrap:wrap;margin-top:4px}
 .field{display:flex;flex-direction:column;gap:4px}
 .field label{font-size:12px;color:#8f97a1}
-.field input{width:110px;padding:7px 9px;border-radius:8px;border:1px solid #333844;background:#12151a;
-             color:#e8eaed;font:inherit;font-variant-numeric:tabular-nums}
-@media (prefers-color-scheme:light){.field input{background:#fff;border-color:#d5d9e1;color:#15171c}}
+.field input,.field select{width:110px;padding:7px 9px;border-radius:8px;border:1px solid #333844;
+             background:#12151a;color:#e8eaed;font:inherit;font-variant-numeric:tabular-nums}
+.field select{width:150px}
+@media (prefers-color-scheme:light){.field input,.field select{background:#fff;border-color:#d5d9e1;color:#15171c}}
 /* progress */
 .bar{height:9px;border-radius:5px;background:#252932;overflow:hidden;margin:11px 0 7px}
 @media (prefers-color-scheme:light){.bar{background:#e6e9ef}}
@@ -115,9 +116,19 @@ table.mx tr.grp2 th{background:#1e222a;padding-top:5px;padding-bottom:5px}
       <input id="r-start" type="number" min="0" step="0.1" value="0"></div>
     <div class="field"><label for="r-end">To (s)</label>
       <input id="r-end" type="number" min="0" step="0.1" value="20"></div>
+    <div class="field"><label for="rounds">Re-separation</label>
+      <select id="rounds">
+        <option value="1" selected>1&times; &middot; 1 pass</option>
+        <option value="2">2&times; &middot; 3 passes</option>
+        <option value="3">3&times; &middot; 5 passes</option>
+        <option value="4">4&times; &middot; 7 passes</option>
+      </select></div>
     <button class="btn sm" id="full">Full length</button>
     <button class="btn primary" id="go" disabled>Separate</button>
   </div>
+  <div class="hint" style="margin-top:7px">Each extra round re-separates both current stems,
+  then sums the piano-labelled children into piano and the orchestra-labelled children into
+  orchestra. R rounds cost 2R&minus;1 passes.</div>
   <div class="bar"><i id="bar"></i></div>
   <div class="row" style="justify-content:space-between">
     <span class="stat" id="status">&mdash;</span><span class="stat" id="pct">0%</span>
@@ -131,12 +142,34 @@ table.mx tr.grp2 th{background:#1e222a;padding-top:5px;padding-bottom:5px}
   <table class="kv">
     <tr><td>Model</td><td id="r-model">-</td></tr>
     <tr><td>Model size</td><td id="r-size">-</td></tr>
+    <tr><td>Re-separation</td><td id="r-rounds">-</td></tr>
     <tr><td>Realtime factor</td><td id="r-rtf">-</td></tr>
     <tr><td>Speed</td><td id="r-speed">-</td></tr>
     <tr><td>Compute time</td><td id="r-secs">-</td></tr>
+    <tr><td>Time per pass</td><td id="r-perpass">-</td></tr>
     <tr><td>Range processed</td><td id="r-range">-</td></tr>
     <tr><td>Device</td><td id="r-dev">-</td></tr>
   </table>
+</div>
+
+<div class="card">
+  <h2>Greedy re-separation: measured</h2>
+  <p class="hint" style="margin-top:0">Student model, the same engine, 12 PCD 2.0.1
+  excerpts (12 s each, 6 s chunks). Absolute SI-SDR is specific to this subset; compare the
+  deltas, not the levels.</p>
+  <table class="kv">
+    <tr><td>1 round &middot; 1 pass</td><td>5.97 dB &middot; RTF 0.69</td></tr>
+    <tr><td>2 rounds &middot; 3 passes</td><td>6.21 dB <span class="yes">+0.24</span> &middot; RTF 2.09</td></tr>
+    <tr><td>3 rounds &middot; 5 passes</td><td>6.26 dB <span class="yes">+0.05</span> &middot; RTF 3.52</td></tr>
+    <tr><td>4 rounds &middot; 7 passes</td><td>6.26 dB <span class="yes">+0.01</span> &middot; RTF 4.88</td></tr>
+  </table>
+  <div class="hint" style="margin-top:9px">The gain is small and saturates: round 2 buys 0.24 dB
+  for 3&times; the compute, round 4 buys 0.01 dB for 7&times;. Eight rounds (15 passes) overshoot:
+  on a two-excerpt spot check the mean fell from 2.98 dB at 1 round to 2.75 dB at 8 rounds.
+  Refinement only re-assigns energy between the two outputs; it cannot recover content that
+  round 1 already removed. Since the model is trained on mixtures, a separated stem is out of
+  distribution. This is greedy layer-wise refinement, not an iterative solver &mdash; and at RTF
+  above 1 it is not real-time on this device.</div>
 </div>
 
 <div class="card">
@@ -186,6 +219,8 @@ table.mx tr.grp2 th{background:#1e222a;padding-top:5px;padding-bottom:5px}
     <li>Three int8 models, loaded on demand &mdash; only the one you pick is downloaded.</li>
     <li>The built-in demo clip is a 10 s excerpt, fetched on demand like a model.</li>
     <li>STFT, inverse STFT, ratio masking and 6 s overlap-add, all in plain JavaScript.</li>
+    <li>Optional greedy re-separation: 1&ndash;4 rounds (1&ndash;7 passes). Default is one pass;
+        extra rounds are measured above and cost 2R&minus;1 passes.</li>
     <li>No WebAssembly, no SIMD, no GPU &mdash; a deliberate worst case for speed.</li>
     <li>The HDMC <i>teacher</i> (334 MB) is not here: it is a different architecture
         (conv + transformer hybrid) and would need a separate JavaScript engine.</li>
@@ -564,6 +599,63 @@ table.mx tr.grp2 th{background:#1e222a;padding-top:5px;padding-bottom:5px}
       if (onProgress) onProgress(1);
       return out;
     }
+
+    /* Greedy refinement ("separate the stems again").
+     *
+     * Round 1 is the ordinary separation. Every later round re-separates the
+     * current piano and current orchestra, then adds the two children labelled
+     * "piano" back into the piano stem and the two labelled "orchestra" back
+     * into the orchestra stem:
+     *
+     *   round 2:  P1 -> PP + PO,  O1 -> OP + OO
+     *             piano = PP + OP, orchestra = PO + OO
+     *
+     * Because each pass uses complementary ratio masks, piano + orchestra is
+     * unchanged by refinement; the rows only re-assign energy between the two
+     * outputs. Cost is 2*rounds - 1 full passes and errors from round 1 are
+     * carried forward, so this is not an iterative solver and does not
+     * guarantee a better estimate. */
+    async processCascade(mix, chunkSec, rounds, onProgress, onRound) {
+      rounds = Math.max(1, Math.floor(rounds || 1));
+      const n = mix.left.length;
+      const totalPasses = 2 * rounds - 1;
+      let pass = 0;
+      const run = async (left, right) => {
+        const base = pass;
+        const out = await this.process({ left, right }, chunkSec, (q) => {
+          if (onProgress) onProgress(Math.min(1, (base + q) / totalPasses));
+        });
+        pass++;
+        return out;
+      };
+
+      let first = await run(mix.left, mix.right);
+      let P = { left: first.pianoL, right: first.pianoR };
+      let O = { left: first.orchL, right: first.orchR };
+      if (onRound) onRound({ round: 1, passes: 1, pianoL: P.left, pianoR: P.right, orchL: O.left, orchR: O.right });
+
+      for (let r = 1; r < rounds; r++) {
+        const a = await run(P.left, P.right);
+        const b = await run(O.left, O.right);
+        const pL = new Float32Array(n), pR = new Float32Array(n);
+        const oL = new Float32Array(n), oR = new Float32Array(n);
+        for (let i = 0; i < n; i++) {
+          pL[i] = a.pianoL[i] + b.pianoL[i];
+          pR[i] = a.pianoR[i] + b.pianoR[i];
+          oL[i] = a.orchL[i] + b.orchL[i];
+          oR[i] = a.orchR[i] + b.orchR[i];
+        }
+        P = { left: pL, right: pR };
+        O = { left: oL, right: oR };
+        if (onRound) onRound({ round: r + 1, passes: 2 * (r + 1) - 1, pianoL: pL, pianoR: pR, orchL: oL, orchR: oR });
+      }
+
+      if (onProgress) onProgress(1);
+      return {
+        pianoL: P.left, pianoR: P.right, orchL: O.left, orchR: O.right,
+        rounds, passes: totalPasses,
+      };
+    }
   }
 
   const api = { Separator, Net, FFT, stft, istft, hann };
@@ -684,6 +776,7 @@ $('go').onclick = async () => {
   let b = parseFloat($('r-end').value)||dur;
   a = Math.max(0, Math.min(a, dur)); b = Math.max(0, Math.min(b, dur));
   if (b <= a + 0.5) { $('status').textContent='end must be after start'; return; }
+  const rounds = Math.max(1, Math.min(4, parseInt($('rounds').value,10)||1));
 
   $('go').disabled = true; $('results').hidden = true;
   $('bar').style.width='0%'; $('pct').textContent='0%';
@@ -697,10 +790,10 @@ $('go').onclick = async () => {
   const s0 = Math.floor(a*44100), s1 = Math.floor(b*44100);
   const mix = { left: audio.L.subarray(s0,s1), right: audio.R.subarray(s0,s1) };
 
-  $('status').textContent = 'separating…';
+  $('status').textContent = rounds>1 ? `separating (${2*rounds-1} passes)…` : 'separating…';
   await new Promise(r=>setTimeout(r,40));
   const t0 = performance.now();
-  const out = await sep.process(mix, 6.0, (p)=>{
+  const out = await sep.processCascade(mix, 6.0, rounds, (p)=>{
     $('bar').style.width = (p*100).toFixed(0)+'%';
     $('pct').textContent = (p*100).toFixed(0)+'%';
   });
@@ -711,10 +804,12 @@ $('go').onclick = async () => {
   $('ao').src = URL.createObjectURL(wavBlob(out.orchL,out.orchR,44100));
   $('r-model').textContent = MODELS[name].label;
   $('r-size').textContent = MODELS[name].weights + ' (' + MODELS[name].download + ' download)';
+  $('r-rounds').textContent = rounds + '× (' + out.passes + ' passes)';
   $('r-rtf').textContent = rtf.toFixed(2);
   $('r-speed').textContent = rtf<1 ? (1/rtf).toFixed(1)+'x faster than realtime'
                                    : rtf.toFixed(1)+'x slower than realtime';
   $('r-secs').textContent = dt.toFixed(2)+' s for '+len.toFixed(1)+' s audio';
+  $('r-perpass').textContent = (dt/out.passes).toFixed(2)+' s';
   $('r-range').textContent = a.toFixed(1)+'–'+b.toFixed(1)+' s';
   $('r-dev').textContent = (navigator.userAgent.includes('Mobile')?'mobile':'desktop')+
     ' · '+(navigator.hardwareConcurrency||'?')+' cores';

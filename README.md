@@ -10,6 +10,8 @@ them.
 ## Features
 
 * Pick a **start / end time** and process only that part of the track.
+* Optional **greedy re-separation** (1-4 rounds = 1-7 passes). Default is one pass; measurements
+  show +0.24 dB at 3 passes and no gain (then a loss) beyond that, at a large RTF cost.
 * **Listen to the original** before running anything.
 * A **built-in 10 s demo clip** — Mozart, Piano Concerto No. 20 in D minor, K. 466
   (Maria João Pires, Swedish Radio Symphony Orchestra, Daniel Harding), 21:24–21:34,
