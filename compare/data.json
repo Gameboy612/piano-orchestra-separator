@@ -7,7 +7,7 @@
     "id": "item_000000",
     "condition": "octave_split_tutti",
     "preset": "chamber",
-    "mixture": "audio/0-item_000000/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/0-item_000000/base_piano.m4a",
@@ -28,14 +28,10 @@
      "+ asym loss": {
       "piano": "audio/0-item_000000/v5_piano.m4a",
       "orch": "audio/0-item_000000/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/0-item_000000/ref_piano.m4a",
-      "orch": "audio/0-item_000000/ref_orch.m4a"
      }
     },
     "score": {
-     "a": -4.15,
+     "a": -4.08,
      "b": 3.89
     }
    },
@@ -43,7 +39,7 @@
     "id": "item_000001",
     "condition": "unison_arpeggio",
     "preset": "full",
-    "mixture": "audio/0-item_000001/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/0-item_000001/base_piano.m4a",
@@ -64,22 +60,18 @@
      "+ asym loss": {
       "piano": "audio/0-item_000001/v5_piano.m4a",
       "orch": "audio/0-item_000001/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/0-item_000001/ref_piano.m4a",
-      "orch": "audio/0-item_000001/ref_orch.m4a"
      }
     },
     "score": {
      "a": -0.11,
-     "b": 5.57
+     "b": 5.56
     }
    },
    {
     "id": "item_000003",
     "condition": "octave_double",
     "preset": "strings5",
-    "mixture": "audio/0-item_000003/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/0-item_000003/base_piano.m4a",
@@ -100,14 +92,10 @@
      "+ asym loss": {
       "piano": "audio/0-item_000003/v5_piano.m4a",
       "orch": "audio/0-item_000003/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/0-item_000003/ref_piano.m4a",
-      "orch": "audio/0-item_000003/ref_orch.m4a"
      }
     },
     "score": {
-     "a": 1.0,
+     "a": 1.02,
      "b": 4.29
     }
    },
@@ -115,7 +103,7 @@
     "id": "item_000004",
     "condition": "mixed_concertante",
     "preset": "strings5",
-    "mixture": "audio/0-item_000004/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/0-item_000004/base_piano.m4a",
@@ -136,22 +124,18 @@
      "+ asym loss": {
       "piano": "audio/0-item_000004/v5_piano.m4a",
       "orch": "audio/0-item_000004/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/0-item_000004/ref_piano.m4a",
-      "orch": "audio/0-item_000004/ref_orch.m4a"
      }
     },
     "score": {
-     "a": -7.95,
-     "b": 0.8
+     "a": -7.88,
+     "b": 0.81
     }
    },
    {
     "id": "item_000005",
     "condition": "unison_melody",
     "preset": "strings4",
-    "mixture": "audio/0-item_000005/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/0-item_000005/base_piano.m4a",
@@ -172,14 +156,10 @@
      "+ asym loss": {
       "piano": "audio/0-item_000005/v5_piano.m4a",
       "orch": "audio/0-item_000005/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/0-item_000005/ref_piano.m4a",
-      "orch": "audio/0-item_000005/ref_orch.m4a"
      }
     },
     "score": {
-     "a": -8.81,
+     "a": -8.78,
      "b": 6.7
     }
    },
@@ -187,7 +167,7 @@
     "id": "item_000006",
     "condition": "tutti_dense",
     "preset": "strings5",
-    "mixture": "audio/0-item_000006/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/0-item_000006/base_piano.m4a",
@@ -208,22 +188,18 @@
      "+ asym loss": {
       "piano": "audio/0-item_000006/v5_piano.m4a",
       "orch": "audio/0-item_000006/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/0-item_000006/ref_piano.m4a",
-      "orch": "audio/0-item_000006/ref_orch.m4a"
      }
     },
     "score": {
-     "a": -3.0,
-     "b": 2.14
+     "a": -3.06,
+     "b": 2.13
     }
    },
    {
     "id": "item_000012",
     "condition": "scale_run",
     "preset": "classical",
-    "mixture": "audio/0-item_000012/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/0-item_000012/base_piano.m4a",
@@ -244,14 +220,10 @@
      "+ asym loss": {
       "piano": "audio/0-item_000012/v5_piano.m4a",
       "orch": "audio/0-item_000012/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/0-item_000012/ref_piano.m4a",
-      "orch": "audio/0-item_000012/ref_orch.m4a"
      }
     },
     "score": {
-     "a": -1.49,
+     "a": -1.51,
      "b": 5.17
     }
    },
@@ -259,7 +231,7 @@
     "id": "item_000013",
     "condition": "octave_melody_down",
     "preset": "string_quartet",
-    "mixture": "audio/0-item_000013/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/0-item_000013/base_piano.m4a",
@@ -280,22 +252,18 @@
      "+ asym loss": {
       "piano": "audio/0-item_000013/v5_piano.m4a",
       "orch": "audio/0-item_000013/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/0-item_000013/ref_piano.m4a",
-      "orch": "audio/0-item_000013/ref_orch.m4a"
      }
     },
     "score": {
-     "a": -2.12,
-     "b": 4.26
+     "a": -2.15,
+     "b": 4.25
     }
    },
    {
     "id": "item_000015",
     "condition": "octave_mix",
     "preset": "strings_solo_plus",
-    "mixture": "audio/0-item_000015/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/0-item_000015/base_piano.m4a",
@@ -316,14 +284,10 @@
      "+ asym loss": {
       "piano": "audio/0-item_000015/v5_piano.m4a",
       "orch": "audio/0-item_000015/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/0-item_000015/ref_piano.m4a",
-      "orch": "audio/0-item_000015/ref_orch.m4a"
      }
     },
     "score": {
-     "a": -4.03,
+     "a": -4.01,
      "b": 2.17
     }
    },
@@ -331,7 +295,7 @@
     "id": "item_000016",
     "condition": "octave_melody_up",
     "preset": "strings4",
-    "mixture": "audio/0-item_000016/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/0-item_000016/base_piano.m4a",
@@ -352,15 +316,11 @@
      "+ asym loss": {
       "piano": "audio/0-item_000016/v5_piano.m4a",
       "orch": "audio/0-item_000016/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/0-item_000016/ref_piano.m4a",
-      "orch": "audio/0-item_000016/ref_orch.m4a"
      }
     },
     "score": {
-     "a": -0.23,
-     "b": 4.52
+     "a": -0.27,
+     "b": 4.51
     }
    }
   ]
@@ -373,7 +333,7 @@
     "id": "octave_melody_down",
     "condition": "octave_melody_down",
     "preset": "vlnsolo-12",
-    "mixture": "audio/1-octave_melody_down/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/1-octave_melody_down/base_piano.m4a",
@@ -394,22 +354,15 @@
      "+ asym loss": {
       "piano": "audio/1-octave_melody_down/v5_piano.m4a",
       "orch": "audio/1-octave_melody_down/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/1-octave_melody_down/piano.m4a",
-      "orch": "audio/1-octave_melody_down/orch.m4a"
      }
     },
-    "score": {
-     "a": -3.3,
-     "b": 2.88
-    }
+    "score": {}
    },
    {
     "id": "octave_melody_up",
     "condition": "octave_melody_up",
     "preset": "vln1+12",
-    "mixture": "audio/1-octave_melody_up/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/1-octave_melody_up/base_piano.m4a",
@@ -430,22 +383,15 @@
      "+ asym loss": {
       "piano": "audio/1-octave_melody_up/v5_piano.m4a",
       "orch": "audio/1-octave_melody_up/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/1-octave_melody_up/piano.m4a",
-      "orch": "audio/1-octave_melody_up/orch.m4a"
      }
     },
-    "score": {
-     "a": -1.28,
-     "b": 7.25
-    }
+    "score": {}
    },
    {
     "id": "octave_mix",
     "condition": "octave_mix",
     "preset": "vln2+12, cb-12",
-    "mixture": "audio/1-octave_mix/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/1-octave_mix/base_piano.m4a",
@@ -466,22 +412,15 @@
      "+ asym loss": {
       "piano": "audio/1-octave_mix/v5_piano.m4a",
       "orch": "audio/1-octave_mix/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/1-octave_mix/piano.m4a",
-      "orch": "audio/1-octave_mix/orch.m4a"
      }
     },
-    "score": {
-     "a": -1.64,
-     "b": 3.92
-    }
+    "score": {}
    },
    {
     "id": "octave_split_tutti",
     "condition": "octave_split_tutti",
     "preset": "vlnsolo+12, vlasolo+12, vcsolo-12",
-    "mixture": "audio/1-octave_split_tutti/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/1-octave_split_tutti/base_piano.m4a",
@@ -502,22 +441,15 @@
      "+ asym loss": {
       "piano": "audio/1-octave_split_tutti/v5_piano.m4a",
       "orch": "audio/1-octave_split_tutti/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/1-octave_split_tutti/piano.m4a",
-      "orch": "audio/1-octave_split_tutti/orch.m4a"
      }
     },
-    "score": {
-     "a": -2.8,
-     "b": 3.34
-    }
+    "score": {}
    },
    {
     "id": "unison_melody",
     "condition": "unison_melody",
     "preset": "full",
-    "mixture": "audio/1-unison_melody/mix.m4a",
+    "mixture": null,
     "models": {
      "PCD base": {
       "piano": "audio/1-unison_melody/base_piano.m4a",
@@ -538,16 +470,9 @@
      "+ asym loss": {
       "piano": "audio/1-unison_melody/v5_piano.m4a",
       "orch": "audio/1-unison_melody/v5_orch.m4a"
-     },
-     "ground truth": {
-      "piano": "audio/1-unison_melody/piano.m4a",
-      "orch": "audio/1-unison_melody/orch.m4a"
      }
     },
-    "score": {
-     "a": -3.89,
-     "b": 2.14
-    }
+    "score": {}
    }
   ]
  },
