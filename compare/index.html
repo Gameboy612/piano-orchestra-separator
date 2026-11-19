@@ -109,7 +109,7 @@ function select(key){
   const box=el('models'); box.innerHTML='';
   ms.forEach(n=>{
     const b=document.createElement('button'); b.className='pill'+(n===model?' on':'');
-    b.textContent=n; b.onclick=()=>{model=n;render();};
+    b.textContent=n; b.onclick=()=>setModel(n);
     box.appendChild(b);
   });
   if(!ms.includes(model)) model=ms.includes('fine-tuned v4')?'fine-tuned v4':ms[0];
@@ -121,12 +121,19 @@ function select(key){
         cur.score.b.toFixed(2)+'</span> dB'):'');
   load();
 }
+function setModel(n){
+  model=n;
+  [...el('models').children].forEach(b=>b.classList.toggle('on',b.textContent===n));
+  load(true);                      // keep the playback position across the switch
+}
 function srcFor(role){
   const m=cur.models[model]||{};
   return m[role]||null;
 }
 function load(keepTime){
-  const t=keepTime?A.piano.currentTime:0;
+  const prevClock=clock();
+  const t=keepTime?(prevClock.currentTime||0):0;
+  const wasPlaying=playing;
   const sp=srcFor('piano'), so=srcFor('orch');
   el('play').disabled=false;
   const oneStem=(!!sp) !== (!!so);
@@ -140,9 +147,10 @@ function load(keepTime){
     A.piano.src=pb; A.orch.src=ob;
     A.piano.load(); A.orch.load();
   }
-  const clock=useMix?A.mix:A.piano;
-  const go=()=>{ clock.currentTime=t; if(playing) startPlay(); };
-  clock.addEventListener('loadedmetadata',go,{once:true});
+  const c2=useMix?A.mix:A.piano;
+  const go=()=>{ try{ c2.currentTime=t; }catch(e){} if(wasPlaying) startPlay(); updTime(); };
+  c2.addEventListener('loadedmetadata',go,{once:true});
+  if(c2.readyState>=1) go();
   updTime();
 }
 function startPlay(){
