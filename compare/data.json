@@ -13,6 +13,14 @@
       "piano": "audio/0-item_000000/base_piano.m4a",
       "orch": "audio/0-item_000000/base_orch.m4a"
      },
+     "+ unison": {
+      "piano": "audio/0-item_000000/v1_piano.m4a",
+      "orch": "audio/0-item_000000/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/0-item_000000/v2_piano.m4a",
+      "orch": "audio/0-item_000000/v2_orch.m4a"
+     },
      "+ octave": {
       "piano": "audio/0-item_000000/v4_piano.m4a",
       "orch": "audio/0-item_000000/v4_orch.m4a"
@@ -40,6 +48,14 @@
      "PCD base": {
       "piano": "audio/0-item_000001/base_piano.m4a",
       "orch": "audio/0-item_000001/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/0-item_000001/v1_piano.m4a",
+      "orch": "audio/0-item_000001/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/0-item_000001/v2_piano.m4a",
+      "orch": "audio/0-item_000001/v2_orch.m4a"
      },
      "+ octave": {
       "piano": "audio/0-item_000001/v4_piano.m4a",
@@ -69,6 +85,14 @@
       "piano": "audio/0-item_000003/base_piano.m4a",
       "orch": "audio/0-item_000003/base_orch.m4a"
      },
+     "+ unison": {
+      "piano": "audio/0-item_000003/v1_piano.m4a",
+      "orch": "audio/0-item_000003/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/0-item_000003/v2_piano.m4a",
+      "orch": "audio/0-item_000003/v2_orch.m4a"
+     },
      "+ octave": {
       "piano": "audio/0-item_000003/v4_piano.m4a",
       "orch": "audio/0-item_000003/v4_orch.m4a"
@@ -96,6 +120,14 @@
      "PCD base": {
       "piano": "audio/0-item_000004/base_piano.m4a",
       "orch": "audio/0-item_000004/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/0-item_000004/v1_piano.m4a",
+      "orch": "audio/0-item_000004/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/0-item_000004/v2_piano.m4a",
+      "orch": "audio/0-item_000004/v2_orch.m4a"
      },
      "+ octave": {
       "piano": "audio/0-item_000004/v4_piano.m4a",
@@ -125,6 +157,14 @@
       "piano": "audio/0-item_000005/base_piano.m4a",
       "orch": "audio/0-item_000005/base_orch.m4a"
      },
+     "+ unison": {
+      "piano": "audio/0-item_000005/v1_piano.m4a",
+      "orch": "audio/0-item_000005/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/0-item_000005/v2_piano.m4a",
+      "orch": "audio/0-item_000005/v2_orch.m4a"
+     },
      "+ octave": {
       "piano": "audio/0-item_000005/v4_piano.m4a",
       "orch": "audio/0-item_000005/v4_orch.m4a"
@@ -152,6 +192,14 @@
      "PCD base": {
       "piano": "audio/0-item_000006/base_piano.m4a",
       "orch": "audio/0-item_000006/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/0-item_000006/v1_piano.m4a",
+      "orch": "audio/0-item_000006/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/0-item_000006/v2_piano.m4a",
+      "orch": "audio/0-item_000006/v2_orch.m4a"
      },
      "+ octave": {
       "piano": "audio/0-item_000006/v4_piano.m4a",
@@ -181,6 +229,14 @@
       "piano": "audio/0-item_000012/base_piano.m4a",
       "orch": "audio/0-item_000012/base_orch.m4a"
      },
+     "+ unison": {
+      "piano": "audio/0-item_000012/v1_piano.m4a",
+      "orch": "audio/0-item_000012/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/0-item_000012/v2_piano.m4a",
+      "orch": "audio/0-item_000012/v2_orch.m4a"
+     },
      "+ octave": {
       "piano": "audio/0-item_000012/v4_piano.m4a",
       "orch": "audio/0-item_000012/v4_orch.m4a"
@@ -208,6 +264,14 @@
      "PCD base": {
       "piano": "audio/0-item_000013/base_piano.m4a",
       "orch": "audio/0-item_000013/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/0-item_000013/v1_piano.m4a",
+      "orch": "audio/0-item_000013/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/0-item_000013/v2_piano.m4a",
+      "orch": "audio/0-item_000013/v2_orch.m4a"
      },
      "+ octave": {
       "piano": "audio/0-item_000013/v4_piano.m4a",
@@ -237,6 +301,14 @@
       "piano": "audio/0-item_000015/base_piano.m4a",
       "orch": "audio/0-item_000015/base_orch.m4a"
      },
+     "+ unison": {
+      "piano": "audio/0-item_000015/v1_piano.m4a",
+      "orch": "audio/0-item_000015/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/0-item_000015/v2_piano.m4a",
+      "orch": "audio/0-item_000015/v2_orch.m4a"
+     },
      "+ octave": {
       "piano": "audio/0-item_000015/v4_piano.m4a",
       "orch": "audio/0-item_000015/v4_orch.m4a"
@@ -264,6 +336,14 @@
      "PCD base": {
       "piano": "audio/0-item_000016/base_piano.m4a",
       "orch": "audio/0-item_000016/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/0-item_000016/v1_piano.m4a",
+      "orch": "audio/0-item_000016/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/0-item_000016/v2_piano.m4a",
+      "orch": "audio/0-item_000016/v2_orch.m4a"
      },
      "+ octave": {
       "piano": "audio/0-item_000016/v4_piano.m4a",
@@ -299,6 +379,14 @@
       "piano": "audio/1-octave_melody_down/base_piano.m4a",
       "orch": "audio/1-octave_melody_down/base_orch.m4a"
      },
+     "+ unison": {
+      "piano": "audio/1-octave_melody_down/v1_piano.m4a",
+      "orch": "audio/1-octave_melody_down/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/1-octave_melody_down/v2_piano.m4a",
+      "orch": "audio/1-octave_melody_down/v2_orch.m4a"
+     },
      "+ octave": {
       "piano": "audio/1-octave_melody_down/v4_piano.m4a",
       "orch": "audio/1-octave_melody_down/v4_orch.m4a"
@@ -326,6 +414,14 @@
      "PCD base": {
       "piano": "audio/1-octave_melody_up/base_piano.m4a",
       "orch": "audio/1-octave_melody_up/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/1-octave_melody_up/v1_piano.m4a",
+      "orch": "audio/1-octave_melody_up/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/1-octave_melody_up/v2_piano.m4a",
+      "orch": "audio/1-octave_melody_up/v2_orch.m4a"
      },
      "+ octave": {
       "piano": "audio/1-octave_melody_up/v4_piano.m4a",
@@ -355,6 +451,14 @@
       "piano": "audio/1-octave_mix/base_piano.m4a",
       "orch": "audio/1-octave_mix/base_orch.m4a"
      },
+     "+ unison": {
+      "piano": "audio/1-octave_mix/v1_piano.m4a",
+      "orch": "audio/1-octave_mix/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/1-octave_mix/v2_piano.m4a",
+      "orch": "audio/1-octave_mix/v2_orch.m4a"
+     },
      "+ octave": {
       "piano": "audio/1-octave_mix/v4_piano.m4a",
       "orch": "audio/1-octave_mix/v4_orch.m4a"
@@ -383,6 +487,14 @@
       "piano": "audio/1-octave_split_tutti/base_piano.m4a",
       "orch": "audio/1-octave_split_tutti/base_orch.m4a"
      },
+     "+ unison": {
+      "piano": "audio/1-octave_split_tutti/v1_piano.m4a",
+      "orch": "audio/1-octave_split_tutti/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/1-octave_split_tutti/v2_piano.m4a",
+      "orch": "audio/1-octave_split_tutti/v2_orch.m4a"
+     },
      "+ octave": {
       "piano": "audio/1-octave_split_tutti/v4_piano.m4a",
       "orch": "audio/1-octave_split_tutti/v4_orch.m4a"
@@ -410,6 +522,14 @@
      "PCD base": {
       "piano": "audio/1-unison_melody/base_piano.m4a",
       "orch": "audio/1-unison_melody/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/1-unison_melody/v1_piano.m4a",
+      "orch": "audio/1-unison_melody/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/1-unison_melody/v2_piano.m4a",
+      "orch": "audio/1-unison_melody/v2_orch.m4a"
      },
      "+ octave": {
       "piano": "audio/1-unison_melody/v4_piano.m4a",
