@@ -1,0 +1,187 @@
+<!doctype html><meta charset=utf-8>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f1116">
+<title>Comparison — base vs fine-tuned UMX20</title>
+<style>
+:root{--bg:#0f1116;--card:#171a21;--line:#262b34;--fg:#e8eaed;--dim:#9aa3ad;--acc:#4f7cff;--good:#3aa76d}
+@media (prefers-color-scheme:light){:root{--bg:#f5f6f8;--card:#fff;--line:#e3e6ec;--fg:#16181d;--dim:#5c646e}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif}
+header{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:1px solid var(--line);
+       padding:14px 16px;padding-top:calc(14px + env(safe-area-inset-top))}
+h1{font-size:18px;margin:0 0 3px}
+.sub{color:var(--dim);font-size:12.5px}
+.sub a{color:var(--acc);text-decoration:none}
+main{max-width:1080px;margin:0 auto;padding:12px 14px 90px;padding-bottom:calc(90px + env(safe-area-inset-bottom))}
+h2{font-size:12.5px;margin:26px 0 3px;color:var(--dim);text-transform:uppercase;letter-spacing:.07em}
+.gnote{color:var(--dim);font-size:12.5px;margin-bottom:10px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px;margin:11px 0}
+.head{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:9px}
+.name{font-weight:600;font-size:15px}
+.tag{font-size:11px;color:var(--dim);border:1px solid var(--line);border-radius:20px;padding:2px 9px}
+.score{font-variant-numeric:tabular-nums;font-size:12.5px;color:var(--dim);display:block;width:100%;margin-top:2px}
+.score b{color:var(--good)}
+.row{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+button{font:inherit;font-size:13.5px;padding:11px 13px;min-height:44px;border-radius:9px;
+       border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer;
+       display:flex;flex-direction:column;justify-content:center;align-items:flex-start;flex:1 1 auto}
+button:active{opacity:.75}
+button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+button.play{background:var(--acc);border-color:var(--acc);color:#fff;flex:0 0 auto;min-width:96px;
+            align-items:center;font-weight:600}
+.kbs{font-size:10px;color:var(--dim);font-weight:400;margin-top:1px}
+button.on .kbs{color:#dbe4ff}
+.seek{flex:1;min-width:120px;accent-color:var(--acc);height:22px}
+.pos{font-variant-numeric:tabular-nums;color:var(--dim);font-size:12.5px;min-width:44px;text-align:right}
+.sources{margin-top:9px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:7px}
+@media (max-width:640px){main{padding:10px 12px 80px}.name{font-size:14.5px}
+ .sources{grid-template-columns:1fr 1fr}.item{padding:12px 11px}}
+</style>
+<header><h1>Base vs fine-tuned — comparison player</h1>
+<div class=sub>Tap a source to switch <b>without losing the playback position</b>.
+<a href="../index.html">&larr; back to the separator demo</a></div></header><main>
+<h2>Exact unison — held-out items, one per condition</h2><div class=gnote>Piano and orchestra on identical pitches and onsets. “fine-tuned” is v4 (unison + octave + strings + piano ADSR).</div>
+<div class=item>
+ <div class=head><span class=name>item_000000</span><span class=tag>octave_split_tutti</span><span class=tag>chamber</span><span class=score>SI-SDR base <b>-4.15</b> → fine-tuned <b>+3.89</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/0-item_000000/mix.m4a">mixture<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000000/ref_piano.m4a">piano (truth)<span class=kbs>119 kB</span></button><button data-src="audio/0-item_000000/ref_orch.m4a">orchestra (truth)<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000000/base_piano.m4a">base → piano<span class=kbs>132 kB</span></button><button data-src="audio/0-item_000000/finetuned_piano.m4a">fine-tuned → piano<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000000/base_orch.m4a">base → orchestra<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000000/finetuned_orch.m4a">fine-tuned → orchestra<span class=kbs>135 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>item_000001</span><span class=tag>unison_arpeggio</span><span class=tag>full</span><span class=score>SI-SDR base <b>-0.11</b> → fine-tuned <b>+5.57</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/0-item_000001/mix.m4a">mixture<span class=kbs>161 kB</span></button><button data-src="audio/0-item_000001/ref_piano.m4a">piano (truth)<span class=kbs>162 kB</span></button><button data-src="audio/0-item_000001/ref_orch.m4a">orchestra (truth)<span class=kbs>162 kB</span></button><button data-src="audio/0-item_000001/base_piano.m4a">base → piano<span class=kbs>156 kB</span></button><button data-src="audio/0-item_000001/finetuned_piano.m4a">fine-tuned → piano<span class=kbs>162 kB</span></button><button data-src="audio/0-item_000001/base_orch.m4a">base → orchestra<span class=kbs>162 kB</span></button><button data-src="audio/0-item_000001/finetuned_orch.m4a">fine-tuned → orchestra<span class=kbs>162 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>item_000003</span><span class=tag>octave_double</span><span class=tag>strings5</span><span class=score>SI-SDR base <b>+1.00</b> → fine-tuned <b>+4.29</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/0-item_000003/mix.m4a">mixture<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000003/ref_piano.m4a">piano (truth)<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000003/ref_orch.m4a">orchestra (truth)<span class=kbs>121 kB</span></button><button data-src="audio/0-item_000003/base_piano.m4a">base → piano<span class=kbs>134 kB</span></button><button data-src="audio/0-item_000003/finetuned_piano.m4a">fine-tuned → piano<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000003/base_orch.m4a">base → orchestra<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000003/finetuned_orch.m4a">fine-tuned → orchestra<span class=kbs>135 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>item_000004</span><span class=tag>mixed_concertante</span><span class=tag>strings5</span><span class=score>SI-SDR base <b>-7.95</b> → fine-tuned <b>+0.80</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/0-item_000004/mix.m4a">mixture<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000004/ref_piano.m4a">piano (truth)<span class=kbs>134 kB</span></button><button data-src="audio/0-item_000004/ref_orch.m4a">orchestra (truth)<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000004/base_piano.m4a">base → piano<span class=kbs>137 kB</span></button><button data-src="audio/0-item_000004/finetuned_piano.m4a">fine-tuned → piano<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000004/base_orch.m4a">base → orchestra<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000004/finetuned_orch.m4a">fine-tuned → orchestra<span class=kbs>136 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>item_000005</span><span class=tag>unison_melody</span><span class=tag>strings4</span><span class=score>SI-SDR base <b>-8.81</b> → fine-tuned <b>+6.70</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/0-item_000005/mix.m4a">mixture<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000005/ref_piano.m4a">piano (truth)<span class=kbs>118 kB</span></button><button data-src="audio/0-item_000005/ref_orch.m4a">orchestra (truth)<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000005/base_piano.m4a">base → piano<span class=kbs>132 kB</span></button><button data-src="audio/0-item_000005/finetuned_piano.m4a">fine-tuned → piano<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000005/base_orch.m4a">base → orchestra<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000005/finetuned_orch.m4a">fine-tuned → orchestra<span class=kbs>135 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>item_000006</span><span class=tag>tutti_dense</span><span class=tag>strings5</span><span class=score>SI-SDR base <b>-3.00</b> → fine-tuned <b>+2.14</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/0-item_000006/mix.m4a">mixture<span class=kbs>111 kB</span></button><button data-src="audio/0-item_000006/ref_piano.m4a">piano (truth)<span class=kbs>108 kB</span></button><button data-src="audio/0-item_000006/ref_orch.m4a">orchestra (truth)<span class=kbs>110 kB</span></button><button data-src="audio/0-item_000006/base_piano.m4a">base → piano<span class=kbs>104 kB</span></button><button data-src="audio/0-item_000006/finetuned_piano.m4a">fine-tuned → piano<span class=kbs>112 kB</span></button><button data-src="audio/0-item_000006/base_orch.m4a">base → orchestra<span class=kbs>112 kB</span></button><button data-src="audio/0-item_000006/finetuned_orch.m4a">fine-tuned → orchestra<span class=kbs>114 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>item_000012</span><span class=tag>scale_run</span><span class=tag>classical</span><span class=score>SI-SDR base <b>-1.49</b> → fine-tuned <b>+5.17</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/0-item_000012/mix.m4a">mixture<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000012/ref_piano.m4a">piano (truth)<span class=kbs>132 kB</span></button><button data-src="audio/0-item_000012/ref_orch.m4a">orchestra (truth)<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000012/base_piano.m4a">base → piano<span class=kbs>131 kB</span></button><button data-src="audio/0-item_000012/finetuned_piano.m4a">fine-tuned → piano<span class=kbs>138 kB</span></button><button data-src="audio/0-item_000012/base_orch.m4a">base → orchestra<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000012/finetuned_orch.m4a">fine-tuned → orchestra<span class=kbs>135 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>item_000013</span><span class=tag>octave_melody_down</span><span class=tag>string_quartet</span><span class=score>SI-SDR base <b>-2.12</b> → fine-tuned <b>+4.26</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/0-item_000013/mix.m4a">mixture<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000013/ref_piano.m4a">piano (truth)<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000013/ref_orch.m4a">orchestra (truth)<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000013/base_piano.m4a">base → piano<span class=kbs>131 kB</span></button><button data-src="audio/0-item_000013/finetuned_piano.m4a">fine-tuned → piano<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000013/base_orch.m4a">base → orchestra<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000013/finetuned_orch.m4a">fine-tuned → orchestra<span class=kbs>139 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>item_000015</span><span class=tag>octave_mix</span><span class=tag>strings_solo_plus</span><span class=score>SI-SDR base <b>-4.03</b> → fine-tuned <b>+2.17</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/0-item_000015/mix.m4a">mixture<span class=kbs>136 kB</span></button><button data-src="audio/0-item_000015/ref_piano.m4a">piano (truth)<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000015/ref_orch.m4a">orchestra (truth)<span class=kbs>119 kB</span></button><button data-src="audio/0-item_000015/base_piano.m4a">base → piano<span class=kbs>137 kB</span></button><button data-src="audio/0-item_000015/finetuned_piano.m4a">fine-tuned → piano<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000015/base_orch.m4a">base → orchestra<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000015/finetuned_orch.m4a">fine-tuned → orchestra<span class=kbs>136 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>item_000016</span><span class=tag>octave_melody_up</span><span class=tag>strings4</span><span class=score>SI-SDR base <b>-0.23</b> → fine-tuned <b>+4.52</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/0-item_000016/mix.m4a">mixture<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000016/ref_piano.m4a">piano (truth)<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000016/ref_orch.m4a">orchestra (truth)<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000016/base_piano.m4a">base → piano<span class=kbs>133 kB</span></button><button data-src="audio/0-item_000016/finetuned_piano.m4a">fine-tuned → piano<span class=kbs>135 kB</span></button><button data-src="audio/0-item_000016/base_orch.m4a">base → orchestra<span class=kbs>134 kB</span></button><button data-src="audio/0-item_000016/finetuned_orch.m4a">fine-tuned → orchestra<span class=kbs>134 kB</span></button></div></div>
+<h2>Octave doubling — same notes, different octaves</h2><div class=gnote>Strings an octave below / above the piano, split tutti, and unison-plus-octave together. Tag shows the octave map.</div>
+<div class=item>
+ <div class=head><span class=name>octave_melody_down</span><span class=tag>octave_melody_down</span><span class=tag>vlnsolo-12</span><span class=score>SI-SDR base <b>-3.30</b> → fine-tuned <b>+2.88</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/1-octave_melody_down/mix.m4a">mixture<span class=kbs>136 kB</span></button><button data-src="audio/1-octave_melody_down/piano.m4a">piano (truth)<span class=kbs>119 kB</span></button><button data-src="audio/1-octave_melody_down/orch.m4a">orchestra (truth)<span class=kbs>135 kB</span></button><button data-src="audio/1-octave_melody_down/base_piano.m4a">base → piano<span class=kbs>136 kB</span></button><button data-src="audio/1-octave_melody_down/v4_piano.m4a">fine-tuned → piano<span class=kbs>136 kB</span></button><button data-src="audio/1-octave_melody_down/base_orch.m4a">base → orchestra<span class=kbs>135 kB</span></button><button data-src="audio/1-octave_melody_down/v4_orch.m4a">fine-tuned → orchestra<span class=kbs>135 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>octave_melody_up</span><span class=tag>octave_melody_up</span><span class=tag>vln1+12</span><span class=score>SI-SDR base <b>-1.28</b> → fine-tuned <b>+7.25</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/1-octave_melody_up/mix.m4a">mixture<span class=kbs>164 kB</span></button><button data-src="audio/1-octave_melody_up/piano.m4a">piano (truth)<span class=kbs>163 kB</span></button><button data-src="audio/1-octave_melody_up/orch.m4a">orchestra (truth)<span class=kbs>163 kB</span></button><button data-src="audio/1-octave_melody_up/base_piano.m4a">base → piano<span class=kbs>160 kB</span></button><button data-src="audio/1-octave_melody_up/v4_piano.m4a">fine-tuned → piano<span class=kbs>163 kB</span></button><button data-src="audio/1-octave_melody_up/base_orch.m4a">base → orchestra<span class=kbs>163 kB</span></button><button data-src="audio/1-octave_melody_up/v4_orch.m4a">fine-tuned → orchestra<span class=kbs>164 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>octave_mix</span><span class=tag>octave_mix</span><span class=tag>vln2+12, cb-12</span><span class=score>SI-SDR base <b>-1.64</b> → fine-tuned <b>+3.92</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/1-octave_mix/mix.m4a">mixture<span class=kbs>160 kB</span></button><button data-src="audio/1-octave_mix/piano.m4a">piano (truth)<span class=kbs>159 kB</span></button><button data-src="audio/1-octave_mix/orch.m4a">orchestra (truth)<span class=kbs>159 kB</span></button><button data-src="audio/1-octave_mix/base_piano.m4a">base → piano<span class=kbs>157 kB</span></button><button data-src="audio/1-octave_mix/v4_piano.m4a">fine-tuned → piano<span class=kbs>160 kB</span></button><button data-src="audio/1-octave_mix/base_orch.m4a">base → orchestra<span class=kbs>159 kB</span></button><button data-src="audio/1-octave_mix/v4_orch.m4a">fine-tuned → orchestra<span class=kbs>160 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>octave_split_tutti</span><span class=tag>octave_split_tutti</span><span class=tag>vlnsolo+12, vlasolo+12, vcsolo-12</span><span class=score>SI-SDR base <b>-2.80</b> → fine-tuned <b>+3.34</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/1-octave_split_tutti/mix.m4a">mixture<span class=kbs>135 kB</span></button><button data-src="audio/1-octave_split_tutti/piano.m4a">piano (truth)<span class=kbs>121 kB</span></button><button data-src="audio/1-octave_split_tutti/orch.m4a">orchestra (truth)<span class=kbs>136 kB</span></button><button data-src="audio/1-octave_split_tutti/base_piano.m4a">base → piano<span class=kbs>134 kB</span></button><button data-src="audio/1-octave_split_tutti/v4_piano.m4a">fine-tuned → piano<span class=kbs>135 kB</span></button><button data-src="audio/1-octave_split_tutti/base_orch.m4a">base → orchestra<span class=kbs>136 kB</span></button><button data-src="audio/1-octave_split_tutti/v4_orch.m4a">fine-tuned → orchestra<span class=kbs>136 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>unison_melody</span><span class=tag>unison_melody</span><span class=tag>full</span><span class=score>SI-SDR base <b>-3.89</b> → fine-tuned <b>+2.14</b> dB</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/1-unison_melody/mix.m4a">mixture<span class=kbs>135 kB</span></button><button data-src="audio/1-unison_melody/piano.m4a">piano (truth)<span class=kbs>136 kB</span></button><button data-src="audio/1-unison_melody/orch.m4a">orchestra (truth)<span class=kbs>136 kB</span></button><button data-src="audio/1-unison_melody/base_piano.m4a">base → piano<span class=kbs>133 kB</span></button><button data-src="audio/1-unison_melody/v4_piano.m4a">fine-tuned → piano<span class=kbs>135 kB</span></button><button data-src="audio/1-unison_melody/base_orch.m4a">base → orchestra<span class=kbs>135 kB</span></button><button data-src="audio/1-unison_melody/v4_orch.m4a">fine-tuned → orchestra<span class=kbs>135 kB</span></button></div></div>
+<h2>Real concertos — your website clip and held-out PCD excerpts</h2><div class=gnote>v1 = first fine-tune (sections only), v2 = strings + piano ADSR, student = distilled 256x2. Ground truth included for PCD excerpts.</div>
+<div class=item>
+ <div class=head><span class=name>Mozart K.466 (Pires) — your website clip</span><span class=tag>real recording, no ground truth</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/2-Mozart-K.466-Pires-your-website-clip/mix.m4a">mixture<span class=kbs>163 kB</span></button><button data-src="audio/2-Mozart-K.466-Pires-your-website-clip/base_piano.m4a">base → piano<span class=kbs>164 kB</span></button><button data-src="audio/2-Mozart-K.466-Pires-your-website-clip/base_orch.m4a">base → orchestra<span class=kbs>163 kB</span></button><button data-src="audio/2-Mozart-K.466-Pires-your-website-clip/finetuned_piano.m4a">v1 → piano<span class=kbs>164 kB</span></button><button data-src="audio/2-Mozart-K.466-Pires-your-website-clip/finetuned_orch.m4a">v1 → orchestra<span class=kbs>163 kB</span></button><button data-src="audio/2-Mozart-K.466-Pires-your-website-clip/enriched_piano.m4a">v2 → piano<span class=kbs>164 kB</span></button><button data-src="audio/2-Mozart-K.466-Pires-your-website-clip/enriched_orch.m4a">v2 → orchestra<span class=kbs>163 kB</span></button><button data-src="audio/2-Mozart-K.466-Pires-your-website-clip/student_piano.m4a">student → piano<span class=kbs>163 kB</span></button><button data-src="audio/2-Mozart-K.466-Pires-your-website-clip/student_orch.m4a">student → orchestra<span class=kbs>163 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>Bach_BWV1056-01-mm001-008_YO-V1</span><span class=tag>held-out PCD excerpt</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/mix.m4a">mixture<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/ref_piano.m4a">piano (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/ref_orch.m4a">orchestra (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/base_piano.m4a">base → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/base_orch.m4a">base → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/finetuned_piano.m4a">v1 → piano<span class=kbs>197 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/finetuned_orch.m4a">v1 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/enriched_piano.m4a">v2 → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/enriched_orch.m4a">v2 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/student_piano.m4a">student → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm001-008_YO-V1/student_orch.m4a">student → orchestra<span class=kbs>196 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>Bach_BWV1056-01-mm047-054_YO-V1</span><span class=tag>held-out PCD excerpt</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/mix.m4a">mixture<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/ref_piano.m4a">piano (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/ref_orch.m4a">orchestra (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/base_piano.m4a">base → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/base_orch.m4a">base → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/finetuned_piano.m4a">v1 → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/finetuned_orch.m4a">v1 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/enriched_piano.m4a">v2 → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/enriched_orch.m4a">v2 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/student_piano.m4a">student → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Bach_BWV1056-01-mm047-054_YO-V1/student_orch.m4a">student → orchestra<span class=kbs>196 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>Beethoven_Op015-01-mm118-125_MM</span><span class=tag>held-out PCD excerpt</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/mix.m4a">mixture<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/ref_piano.m4a">piano (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/ref_orch.m4a">orchestra (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/base_piano.m4a">base → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/base_orch.m4a">base → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/finetuned_piano.m4a">v1 → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/finetuned_orch.m4a">v1 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/enriched_piano.m4a">v2 → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/enriched_orch.m4a">v2 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/student_piano.m4a">student → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm118-125_MM/student_orch.m4a">student → orchestra<span class=kbs>196 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>Beethoven_Op015-01-mm295-302_MM</span><span class=tag>held-out PCD excerpt</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/mix.m4a">mixture<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/ref_piano.m4a">piano (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/ref_orch.m4a">orchestra (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/base_piano.m4a">base → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/base_orch.m4a">base → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/finetuned_piano.m4a">v1 → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/finetuned_orch.m4a">v1 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/enriched_piano.m4a">v2 → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/enriched_orch.m4a">v2 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/student_piano.m4a">student → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op015-01-mm295-302_MM/student_orch.m4a">student → orchestra<span class=kbs>196 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>Beethoven_Op019-01-mm117-124_ES-V1</span><span class=tag>held-out PCD excerpt</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/mix.m4a">mixture<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/ref_piano.m4a">piano (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/ref_orch.m4a">orchestra (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/base_piano.m4a">base → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/base_orch.m4a">base → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/finetuned_piano.m4a">v1 → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/finetuned_orch.m4a">v1 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/enriched_piano.m4a">v2 → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/enriched_orch.m4a">v2 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/student_piano.m4a">student → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op019-01-mm117-124_ES-V1/student_orch.m4a">student → orchestra<span class=kbs>196 kB</span></button></div></div>
+<div class=item>
+ <div class=head><span class=name>Beethoven_Op037-01-mm148-154_ES-V1</span><span class=tag>held-out PCD excerpt</span></div>
+ <div class=row><button class=play>&#9654; Play</button>
+  <input type=range class=seek min=0 max=1000 value=0><span class=pos>0:00</span></div>
+ <div class=sources><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/mix.m4a">mixture<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/ref_piano.m4a">piano (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/ref_orch.m4a">orchestra (truth)<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/base_piano.m4a">base → piano<span class=kbs>195 kB</span></button><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/base_orch.m4a">base → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/finetuned_piano.m4a">v1 → piano<span class=kbs>195 kB</span></button><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/finetuned_orch.m4a">v1 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/enriched_piano.m4a">v2 → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/enriched_orch.m4a">v2 → orchestra<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/student_piano.m4a">student → piano<span class=kbs>196 kB</span></button><button data-src="audio/2-Beethoven_Op037-01-mm148-154_ES-V1/student_orch.m4a">student → orchestra<span class=kbs>196 kB</span></button></div></div>
+</main><script>
+const items=[...document.querySelectorAll('.item')];
+items.forEach(it=>{
+  const audio=new Audio(); audio.preload='none'; audio.setAttribute('playsinline','');
+  const btns=[...it.querySelectorAll('[data-src]')];
+  const play=it.querySelector('.play'), seek=it.querySelector('.seek'), pos=it.querySelector('.pos');
+  let idx=-1;
+  const fmt=t=>{t=Math.max(0,t||0);return Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0')};
+  function pick(i){
+    if(i<0||i>=btns.length||i===idx) return;
+    const t=audio.currentTime, playing=!audio.paused;
+    idx=i; audio.src=btns[i].dataset.src; audio.load();
+    btns.forEach((b,j)=>b.classList.toggle('on',j===i));
+    audio.addEventListener('loadedmetadata',()=>{ if(t>0) audio.currentTime=Math.min(t,audio.duration||t);
+      if(playing) audio.play().catch(()=>{}); },{once:true});
+  }
+  btns.forEach((b,i)=>b.onclick=()=>pick(i));
+  play.onclick=async()=>{ if(idx<0) pick(0); if(audio.paused){ try{await audio.play();}catch(e){} } else audio.pause(); };
+  audio.onplay=()=>play.textContent='❚❚ Pause';
+  audio.onpause=()=>play.textContent='▶ Play';
+  audio.ontimeupdate=()=>{ if(audio.duration) seek.value=1000*audio.currentTime/audio.duration; pos.textContent=fmt(audio.currentTime); };
+  seek.oninput=()=>{ if(audio.duration) audio.currentTime=audio.duration*seek.value/1000; };
+  it._a=audio; it._pick=pick; it._n=btns.length; it._i=()=>idx;
+});
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT') return;
+  const it=items.find(i=>i._a&&!i._a.paused)||items[0]; if(!it) return;
+  const a=it._a;
+  if(e.key===' '){e.preventDefault(); a.paused?a.play():a.pause();}
+  if(e.key.toLowerCase()==='m'){it._pick((it._i()+1)%it._n);}
+});
+</script>
