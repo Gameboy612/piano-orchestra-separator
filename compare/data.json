@@ -1,7 +1,7 @@
 [
  {
   "title": "Exact unison \u2014 held-out items, one per condition",
-  "note": "Piano and orchestra on identical pitches and onsets. \u201cfine-tuned\u201d is v4 (unison + octave + strings + piano ADSR).",
+  "note": "Piano and orchestra on identical pitches and onsets. \u201c+ octave\u201d is the current best (unison + timbre + octave doublings).",
   "items": [
    {
     "id": "item_000000",
@@ -9,15 +9,15 @@
     "preset": "chamber",
     "mixture": "audio/0-item_000000/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/0-item_000000/base_piano.m4a",
       "orch": "audio/0-item_000000/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/0-item_000000/v4_piano.m4a",
       "orch": "audio/0-item_000000/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/0-item_000000/v5_piano.m4a",
       "orch": "audio/0-item_000000/v5_orch.m4a"
      },
@@ -37,15 +37,15 @@
     "preset": "full",
     "mixture": "audio/0-item_000001/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/0-item_000001/base_piano.m4a",
       "orch": "audio/0-item_000001/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/0-item_000001/v4_piano.m4a",
       "orch": "audio/0-item_000001/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/0-item_000001/v5_piano.m4a",
       "orch": "audio/0-item_000001/v5_orch.m4a"
      },
@@ -65,15 +65,15 @@
     "preset": "strings5",
     "mixture": "audio/0-item_000003/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/0-item_000003/base_piano.m4a",
       "orch": "audio/0-item_000003/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/0-item_000003/v4_piano.m4a",
       "orch": "audio/0-item_000003/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/0-item_000003/v5_piano.m4a",
       "orch": "audio/0-item_000003/v5_orch.m4a"
      },
@@ -93,15 +93,15 @@
     "preset": "strings5",
     "mixture": "audio/0-item_000004/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/0-item_000004/base_piano.m4a",
       "orch": "audio/0-item_000004/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/0-item_000004/v4_piano.m4a",
       "orch": "audio/0-item_000004/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/0-item_000004/v5_piano.m4a",
       "orch": "audio/0-item_000004/v5_orch.m4a"
      },
@@ -121,15 +121,15 @@
     "preset": "strings4",
     "mixture": "audio/0-item_000005/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/0-item_000005/base_piano.m4a",
       "orch": "audio/0-item_000005/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/0-item_000005/v4_piano.m4a",
       "orch": "audio/0-item_000005/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/0-item_000005/v5_piano.m4a",
       "orch": "audio/0-item_000005/v5_orch.m4a"
      },
@@ -149,15 +149,15 @@
     "preset": "strings5",
     "mixture": "audio/0-item_000006/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/0-item_000006/base_piano.m4a",
       "orch": "audio/0-item_000006/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/0-item_000006/v4_piano.m4a",
       "orch": "audio/0-item_000006/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/0-item_000006/v5_piano.m4a",
       "orch": "audio/0-item_000006/v5_orch.m4a"
      },
@@ -177,15 +177,15 @@
     "preset": "classical",
     "mixture": "audio/0-item_000012/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/0-item_000012/base_piano.m4a",
       "orch": "audio/0-item_000012/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/0-item_000012/v4_piano.m4a",
       "orch": "audio/0-item_000012/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/0-item_000012/v5_piano.m4a",
       "orch": "audio/0-item_000012/v5_orch.m4a"
      },
@@ -205,15 +205,15 @@
     "preset": "string_quartet",
     "mixture": "audio/0-item_000013/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/0-item_000013/base_piano.m4a",
       "orch": "audio/0-item_000013/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/0-item_000013/v4_piano.m4a",
       "orch": "audio/0-item_000013/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/0-item_000013/v5_piano.m4a",
       "orch": "audio/0-item_000013/v5_orch.m4a"
      },
@@ -233,15 +233,15 @@
     "preset": "strings_solo_plus",
     "mixture": "audio/0-item_000015/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/0-item_000015/base_piano.m4a",
       "orch": "audio/0-item_000015/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/0-item_000015/v4_piano.m4a",
       "orch": "audio/0-item_000015/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/0-item_000015/v5_piano.m4a",
       "orch": "audio/0-item_000015/v5_orch.m4a"
      },
@@ -261,15 +261,15 @@
     "preset": "strings4",
     "mixture": "audio/0-item_000016/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/0-item_000016/base_piano.m4a",
       "orch": "audio/0-item_000016/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/0-item_000016/v4_piano.m4a",
       "orch": "audio/0-item_000016/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/0-item_000016/v5_piano.m4a",
       "orch": "audio/0-item_000016/v5_orch.m4a"
      },
@@ -295,15 +295,15 @@
     "preset": "vlnsolo-12",
     "mixture": "audio/1-octave_melody_down/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/1-octave_melody_down/base_piano.m4a",
       "orch": "audio/1-octave_melody_down/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/1-octave_melody_down/v4_piano.m4a",
       "orch": "audio/1-octave_melody_down/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/1-octave_melody_down/v5_piano.m4a",
       "orch": "audio/1-octave_melody_down/v5_orch.m4a"
      },
@@ -323,15 +323,15 @@
     "preset": "vln1+12",
     "mixture": "audio/1-octave_melody_up/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/1-octave_melody_up/base_piano.m4a",
       "orch": "audio/1-octave_melody_up/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/1-octave_melody_up/v4_piano.m4a",
       "orch": "audio/1-octave_melody_up/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/1-octave_melody_up/v5_piano.m4a",
       "orch": "audio/1-octave_melody_up/v5_orch.m4a"
      },
@@ -351,15 +351,15 @@
     "preset": "vln2+12, cb-12",
     "mixture": "audio/1-octave_mix/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/1-octave_mix/base_piano.m4a",
       "orch": "audio/1-octave_mix/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/1-octave_mix/v4_piano.m4a",
       "orch": "audio/1-octave_mix/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/1-octave_mix/v5_piano.m4a",
       "orch": "audio/1-octave_mix/v5_orch.m4a"
      },
@@ -379,15 +379,15 @@
     "preset": "vlnsolo+12, vlasolo+12, vcsolo-12",
     "mixture": "audio/1-octave_split_tutti/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/1-octave_split_tutti/base_piano.m4a",
       "orch": "audio/1-octave_split_tutti/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/1-octave_split_tutti/v4_piano.m4a",
       "orch": "audio/1-octave_split_tutti/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/1-octave_split_tutti/v5_piano.m4a",
       "orch": "audio/1-octave_split_tutti/v5_orch.m4a"
      },
@@ -407,15 +407,15 @@
     "preset": "full",
     "mixture": "audio/1-unison_melody/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/1-unison_melody/base_piano.m4a",
       "orch": "audio/1-unison_melody/base_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/1-unison_melody/v4_piano.m4a",
       "orch": "audio/1-unison_melody/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/1-unison_melody/v5_piano.m4a",
       "orch": "audio/1-unison_melody/v5_orch.m4a"
      },
@@ -433,7 +433,7 @@
  },
  {
   "title": "Real concertos \u2014 your website clip and held-out PCD excerpts",
-  "note": "v1 = first fine-tune (sections only), v2 = strings + piano ADSR, student = distilled 256x2. Ground truth included for PCD excerpts.",
+  "note": "+ unison = first fine-tune, + timbre = strings + piano ADSR, + octave = with octave doublings, + asym loss = per-source loss weights.",
   "items": [
    {
     "id": "Mozart K.466 (Pires) \u2014 your website clip",
@@ -441,27 +441,27 @@
     "preset": "",
     "mixture": "audio/2-Mozart-K.466-Pires-your-website-clip/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/2-Mozart-K.466-Pires-your-website-clip/base_piano.m4a",
       "orch": "audio/2-Mozart-K.466-Pires-your-website-clip/base_orch.m4a"
      },
-     "fine-tuned v1": {
+     "+ unison": {
       "piano": "audio/2-Mozart-K.466-Pires-your-website-clip/v1_piano.m4a",
       "orch": "audio/2-Mozart-K.466-Pires-your-website-clip/v1_orch.m4a"
      },
-     "fine-tuned v2": {
+     "+ timbre": {
       "piano": "audio/2-Mozart-K.466-Pires-your-website-clip/v2_piano.m4a",
       "orch": "audio/2-Mozart-K.466-Pires-your-website-clip/v2_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/2-Mozart-K.466-Pires-your-website-clip/v4_piano.m4a",
       "orch": "audio/2-Mozart-K.466-Pires-your-website-clip/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/2-Mozart-K.466-Pires-your-website-clip/v5_piano.m4a",
       "orch": "audio/2-Mozart-K.466-Pires-your-website-clip/v5_orch.m4a"
      },
-     "student 5 MB": {
+     "distilled 5 MB": {
       "piano": "audio/2-Mozart-K.466-Pires-your-website-clip/student_piano.m4a",
       "orch": "audio/2-Mozart-K.466-Pires-your-website-clip/student_orch.m4a"
      }
@@ -474,27 +474,27 @@
     "preset": "",
     "mixture": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/base_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/base_orch.m4a"
      },
-     "fine-tuned v1": {
+     "+ unison": {
       "piano": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/v1_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/v1_orch.m4a"
      },
-     "fine-tuned v2": {
+     "+ timbre": {
       "piano": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/v2_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/v2_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/v4_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/v5_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/v5_orch.m4a"
      },
-     "student 5 MB": {
+     "distilled 5 MB": {
       "piano": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/student_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/student_orch.m4a"
      },
@@ -511,27 +511,27 @@
     "preset": "",
     "mixture": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/base_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/base_orch.m4a"
      },
-     "fine-tuned v1": {
+     "+ unison": {
       "piano": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/v1_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/v1_orch.m4a"
      },
-     "fine-tuned v2": {
+     "+ timbre": {
       "piano": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/v2_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/v2_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/v4_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/v5_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/v5_orch.m4a"
      },
-     "student 5 MB": {
+     "distilled 5 MB": {
       "piano": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/student_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/student_orch.m4a"
      },
@@ -548,27 +548,27 @@
     "preset": "",
     "mixture": "audio/2-Beethoven_Op015-01-mm118-125_MM/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/2-Beethoven_Op015-01-mm118-125_MM/base_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm118-125_MM/base_orch.m4a"
      },
-     "fine-tuned v1": {
+     "+ unison": {
       "piano": "audio/2-Beethoven_Op015-01-mm118-125_MM/v1_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm118-125_MM/v1_orch.m4a"
      },
-     "fine-tuned v2": {
+     "+ timbre": {
       "piano": "audio/2-Beethoven_Op015-01-mm118-125_MM/v2_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm118-125_MM/v2_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/2-Beethoven_Op015-01-mm118-125_MM/v4_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm118-125_MM/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/2-Beethoven_Op015-01-mm118-125_MM/v5_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm118-125_MM/v5_orch.m4a"
      },
-     "student 5 MB": {
+     "distilled 5 MB": {
       "piano": "audio/2-Beethoven_Op015-01-mm118-125_MM/student_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm118-125_MM/student_orch.m4a"
      },
@@ -585,27 +585,27 @@
     "preset": "",
     "mixture": "audio/2-Beethoven_Op015-01-mm295-302_MM/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/2-Beethoven_Op015-01-mm295-302_MM/base_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm295-302_MM/base_orch.m4a"
      },
-     "fine-tuned v1": {
+     "+ unison": {
       "piano": "audio/2-Beethoven_Op015-01-mm295-302_MM/v1_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm295-302_MM/v1_orch.m4a"
      },
-     "fine-tuned v2": {
+     "+ timbre": {
       "piano": "audio/2-Beethoven_Op015-01-mm295-302_MM/v2_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm295-302_MM/v2_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/2-Beethoven_Op015-01-mm295-302_MM/v4_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm295-302_MM/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/2-Beethoven_Op015-01-mm295-302_MM/v5_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm295-302_MM/v5_orch.m4a"
      },
-     "student 5 MB": {
+     "distilled 5 MB": {
       "piano": "audio/2-Beethoven_Op015-01-mm295-302_MM/student_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm295-302_MM/student_orch.m4a"
      },
@@ -622,27 +622,27 @@
     "preset": "",
     "mixture": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/base_piano.m4a",
       "orch": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/base_orch.m4a"
      },
-     "fine-tuned v1": {
+     "+ unison": {
       "piano": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/v1_piano.m4a",
       "orch": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/v1_orch.m4a"
      },
-     "fine-tuned v2": {
+     "+ timbre": {
       "piano": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/v2_piano.m4a",
       "orch": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/v2_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/v4_piano.m4a",
       "orch": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/v5_piano.m4a",
       "orch": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/v5_orch.m4a"
      },
-     "student 5 MB": {
+     "distilled 5 MB": {
       "piano": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/student_piano.m4a",
       "orch": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/student_orch.m4a"
      },
@@ -659,27 +659,27 @@
     "preset": "",
     "mixture": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/mix.m4a",
     "models": {
-     "base UMX20": {
+     "PCD base": {
       "piano": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/base_piano.m4a",
       "orch": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/base_orch.m4a"
      },
-     "fine-tuned v1": {
+     "+ unison": {
       "piano": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/v1_piano.m4a",
       "orch": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/v1_orch.m4a"
      },
-     "fine-tuned v2": {
+     "+ timbre": {
       "piano": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/v2_piano.m4a",
       "orch": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/v2_orch.m4a"
      },
-     "fine-tuned v4": {
+     "+ octave": {
       "piano": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/v4_piano.m4a",
       "orch": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/v4_orch.m4a"
      },
-     "loss-tuned v5": {
+     "+ asym loss": {
       "piano": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/v5_piano.m4a",
       "orch": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/v5_orch.m4a"
      },
-     "student 5 MB": {
+     "distilled 5 MB": {
       "piano": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/student_piano.m4a",
       "orch": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/student_orch.m4a"
      },
@@ -702,11 +702,11 @@
     "preset": "chamber",
     "mixture": "audio/3-item_000000/mix.m4a",
     "models": {
-     "symmetric loss": {
+     "symmetric": {
       "piano": "audio/3-item_000000/sym_piano.m4a",
       "orch": "audio/3-item_000000/sym_orch.m4a"
      },
-     "asymmetric loss": {
+     "asymmetric": {
       "piano": "audio/3-item_000000/asym_piano.m4a",
       "orch": "audio/3-item_000000/asym_orch.m4a"
      },
@@ -723,11 +723,11 @@
     "preset": "strings4",
     "mixture": "audio/3-item_000005/mix.m4a",
     "models": {
-     "symmetric loss": {
+     "symmetric": {
       "piano": "audio/3-item_000005/sym_piano.m4a",
       "orch": "audio/3-item_000005/sym_orch.m4a"
      },
-     "asymmetric loss": {
+     "asymmetric": {
       "piano": "audio/3-item_000005/asym_piano.m4a",
       "orch": "audio/3-item_000005/asym_orch.m4a"
      },
@@ -744,11 +744,11 @@
     "preset": "strings4",
     "mixture": "audio/3-item_000009/mix.m4a",
     "models": {
-     "symmetric loss": {
+     "symmetric": {
       "piano": "audio/3-item_000009/sym_piano.m4a",
       "orch": "audio/3-item_000009/sym_orch.m4a"
      },
-     "asymmetric loss": {
+     "asymmetric": {
       "piano": "audio/3-item_000009/asym_piano.m4a",
       "orch": "audio/3-item_000009/asym_orch.m4a"
      },
