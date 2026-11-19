@@ -553,7 +553,7 @@
  },
  {
   "title": "Real concertos \u2014 your website clip and held-out PCD excerpts",
-  "note": "+ unison = first fine-tune, + timbre = strings + piano ADSR, + octave = with octave doublings, + asym loss = per-source loss weights.",
+  "note": "All 16 held-out pieces. + unison / + timbre / + octave / + asym loss are cumulative; every track carries ground truth for comparison.",
   "items": [
    {
     "id": "Mozart K.466 (Pires) \u2014 your website clip",
@@ -806,6 +806,376 @@
      "ground truth": {
       "piano": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/ref_piano.m4a",
       "orch": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/ref_orch.m4a"
+     }
+    },
+    "score": {}
+   },
+   {
+    "id": "Chopin_Op021-03-mm145-157_ES",
+    "condition": "held-out PCD excerpt",
+    "preset": "",
+    "mixture": "audio/2-Chopin_Op021-03-mm145-157_ES/mix.m4a",
+    "models": {
+     "PCD base": {
+      "piano": "audio/2-Chopin_Op021-03-mm145-157_ES/base_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm145-157_ES/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/2-Chopin_Op021-03-mm145-157_ES/v1_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm145-157_ES/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/2-Chopin_Op021-03-mm145-157_ES/v2_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm145-157_ES/v2_orch.m4a"
+     },
+     "+ octave": {
+      "piano": "audio/2-Chopin_Op021-03-mm145-157_ES/v4_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm145-157_ES/v4_orch.m4a"
+     },
+     "+ asym loss": {
+      "piano": "audio/2-Chopin_Op021-03-mm145-157_ES/v5_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm145-157_ES/v5_orch.m4a"
+     },
+     "distilled 5 MB": {
+      "piano": "audio/2-Chopin_Op021-03-mm145-157_ES/student_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm145-157_ES/student_orch.m4a"
+     },
+     "ground truth": {
+      "piano": "audio/2-Chopin_Op021-03-mm145-157_ES/ref_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm145-157_ES/ref_orch.m4a"
+     }
+    },
+    "score": {}
+   },
+   {
+    "id": "Chopin_Op021-03-mm249-260_ES",
+    "condition": "held-out PCD excerpt",
+    "preset": "",
+    "mixture": "audio/2-Chopin_Op021-03-mm249-260_ES/mix.m4a",
+    "models": {
+     "PCD base": {
+      "piano": "audio/2-Chopin_Op021-03-mm249-260_ES/base_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm249-260_ES/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/2-Chopin_Op021-03-mm249-260_ES/v1_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm249-260_ES/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/2-Chopin_Op021-03-mm249-260_ES/v2_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm249-260_ES/v2_orch.m4a"
+     },
+     "+ octave": {
+      "piano": "audio/2-Chopin_Op021-03-mm249-260_ES/v4_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm249-260_ES/v4_orch.m4a"
+     },
+     "+ asym loss": {
+      "piano": "audio/2-Chopin_Op021-03-mm249-260_ES/v5_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm249-260_ES/v5_orch.m4a"
+     },
+     "distilled 5 MB": {
+      "piano": "audio/2-Chopin_Op021-03-mm249-260_ES/student_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm249-260_ES/student_orch.m4a"
+     },
+     "ground truth": {
+      "piano": "audio/2-Chopin_Op021-03-mm249-260_ES/ref_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm249-260_ES/ref_orch.m4a"
+     }
+    },
+    "score": {}
+   },
+   {
+    "id": "Chopin_Op021-03-mm411-424_ES",
+    "condition": "held-out PCD excerpt",
+    "preset": "",
+    "mixture": "audio/2-Chopin_Op021-03-mm411-424_ES/mix.m4a",
+    "models": {
+     "PCD base": {
+      "piano": "audio/2-Chopin_Op021-03-mm411-424_ES/base_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm411-424_ES/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/2-Chopin_Op021-03-mm411-424_ES/v1_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm411-424_ES/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/2-Chopin_Op021-03-mm411-424_ES/v2_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm411-424_ES/v2_orch.m4a"
+     },
+     "+ octave": {
+      "piano": "audio/2-Chopin_Op021-03-mm411-424_ES/v4_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm411-424_ES/v4_orch.m4a"
+     },
+     "+ asym loss": {
+      "piano": "audio/2-Chopin_Op021-03-mm411-424_ES/v5_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm411-424_ES/v5_orch.m4a"
+     },
+     "distilled 5 MB": {
+      "piano": "audio/2-Chopin_Op021-03-mm411-424_ES/student_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm411-424_ES/student_orch.m4a"
+     },
+     "ground truth": {
+      "piano": "audio/2-Chopin_Op021-03-mm411-424_ES/ref_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm411-424_ES/ref_orch.m4a"
+     }
+    },
+    "score": {}
+   },
+   {
+    "id": "Mendelssohn_MWVO007-01-mm023-029_ES-V1",
+    "condition": "held-out PCD excerpt",
+    "preset": "",
+    "mixture": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/mix.m4a",
+    "models": {
+     "PCD base": {
+      "piano": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/base_piano.m4a",
+      "orch": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/v1_piano.m4a",
+      "orch": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/v2_piano.m4a",
+      "orch": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/v2_orch.m4a"
+     },
+     "+ octave": {
+      "piano": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/v4_piano.m4a",
+      "orch": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/v4_orch.m4a"
+     },
+     "+ asym loss": {
+      "piano": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/v5_piano.m4a",
+      "orch": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/v5_orch.m4a"
+     },
+     "distilled 5 MB": {
+      "piano": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/student_piano.m4a",
+      "orch": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/student_orch.m4a"
+     },
+     "ground truth": {
+      "piano": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/ref_piano.m4a",
+      "orch": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/ref_orch.m4a"
+     }
+    },
+    "score": {}
+   },
+   {
+    "id": "Mozart_KV414-01-mm180-186_YO",
+    "condition": "held-out PCD excerpt",
+    "preset": "",
+    "mixture": "audio/2-Mozart_KV414-01-mm180-186_YO/mix.m4a",
+    "models": {
+     "PCD base": {
+      "piano": "audio/2-Mozart_KV414-01-mm180-186_YO/base_piano.m4a",
+      "orch": "audio/2-Mozart_KV414-01-mm180-186_YO/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/2-Mozart_KV414-01-mm180-186_YO/v1_piano.m4a",
+      "orch": "audio/2-Mozart_KV414-01-mm180-186_YO/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/2-Mozart_KV414-01-mm180-186_YO/v2_piano.m4a",
+      "orch": "audio/2-Mozart_KV414-01-mm180-186_YO/v2_orch.m4a"
+     },
+     "+ octave": {
+      "piano": "audio/2-Mozart_KV414-01-mm180-186_YO/v4_piano.m4a",
+      "orch": "audio/2-Mozart_KV414-01-mm180-186_YO/v4_orch.m4a"
+     },
+     "+ asym loss": {
+      "piano": "audio/2-Mozart_KV414-01-mm180-186_YO/v5_piano.m4a",
+      "orch": "audio/2-Mozart_KV414-01-mm180-186_YO/v5_orch.m4a"
+     },
+     "distilled 5 MB": {
+      "piano": "audio/2-Mozart_KV414-01-mm180-186_YO/student_piano.m4a",
+      "orch": "audio/2-Mozart_KV414-01-mm180-186_YO/student_orch.m4a"
+     },
+     "ground truth": {
+      "piano": "audio/2-Mozart_KV414-01-mm180-186_YO/ref_piano.m4a",
+      "orch": "audio/2-Mozart_KV414-01-mm180-186_YO/ref_orch.m4a"
+     }
+    },
+    "score": {}
+   },
+   {
+    "id": "Mozart_KV467-02-mm030-032_YO-V2",
+    "condition": "held-out PCD excerpt",
+    "preset": "",
+    "mixture": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/mix.m4a",
+    "models": {
+     "PCD base": {
+      "piano": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/base_piano.m4a",
+      "orch": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/v1_piano.m4a",
+      "orch": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/v2_piano.m4a",
+      "orch": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/v2_orch.m4a"
+     },
+     "+ octave": {
+      "piano": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/v4_piano.m4a",
+      "orch": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/v4_orch.m4a"
+     },
+     "+ asym loss": {
+      "piano": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/v5_piano.m4a",
+      "orch": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/v5_orch.m4a"
+     },
+     "distilled 5 MB": {
+      "piano": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/student_piano.m4a",
+      "orch": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/student_orch.m4a"
+     },
+     "ground truth": {
+      "piano": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/ref_piano.m4a",
+      "orch": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/ref_orch.m4a"
+     }
+    },
+    "score": {}
+   },
+   {
+    "id": "Rachmaninoff_Op018-01-mm114-120_JL",
+    "condition": "held-out PCD excerpt",
+    "preset": "",
+    "mixture": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/mix.m4a",
+    "models": {
+     "PCD base": {
+      "piano": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/base_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/v1_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/v2_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/v2_orch.m4a"
+     },
+     "+ octave": {
+      "piano": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/v4_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/v4_orch.m4a"
+     },
+     "+ asym loss": {
+      "piano": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/v5_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/v5_orch.m4a"
+     },
+     "distilled 5 MB": {
+      "piano": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/student_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/student_orch.m4a"
+     },
+     "ground truth": {
+      "piano": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/ref_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/ref_orch.m4a"
+     }
+    },
+    "score": {}
+   },
+   {
+    "id": "Rachmaninoff_Op030-01-mm033-038_ES-V1",
+    "condition": "held-out PCD excerpt",
+    "preset": "",
+    "mixture": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/mix.m4a",
+    "models": {
+     "PCD base": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/base_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/v1_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/v2_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/v2_orch.m4a"
+     },
+     "+ octave": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/v4_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/v4_orch.m4a"
+     },
+     "+ asym loss": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/v5_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/v5_orch.m4a"
+     },
+     "distilled 5 MB": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/student_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/student_orch.m4a"
+     },
+     "ground truth": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/ref_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/ref_orch.m4a"
+     }
+    },
+    "score": {}
+   },
+   {
+    "id": "Rachmaninoff_Op030-01-mm033-038_ES-V2",
+    "condition": "held-out PCD excerpt",
+    "preset": "",
+    "mixture": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/mix.m4a",
+    "models": {
+     "PCD base": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/base_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/v1_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/v2_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/v2_orch.m4a"
+     },
+     "+ octave": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/v4_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/v4_orch.m4a"
+     },
+     "+ asym loss": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/v5_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/v5_orch.m4a"
+     },
+     "distilled 5 MB": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/student_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/student_orch.m4a"
+     },
+     "ground truth": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/ref_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/ref_orch.m4a"
+     }
+    },
+    "score": {}
+   },
+   {
+    "id": "Saint_Op022-01-mm061-062_ES",
+    "condition": "held-out PCD excerpt",
+    "preset": "",
+    "mixture": "audio/2-Saint_Op022-01-mm061-062_ES/mix.m4a",
+    "models": {
+     "PCD base": {
+      "piano": "audio/2-Saint_Op022-01-mm061-062_ES/base_piano.m4a",
+      "orch": "audio/2-Saint_Op022-01-mm061-062_ES/base_orch.m4a"
+     },
+     "+ unison": {
+      "piano": "audio/2-Saint_Op022-01-mm061-062_ES/v1_piano.m4a",
+      "orch": "audio/2-Saint_Op022-01-mm061-062_ES/v1_orch.m4a"
+     },
+     "+ timbre": {
+      "piano": "audio/2-Saint_Op022-01-mm061-062_ES/v2_piano.m4a",
+      "orch": "audio/2-Saint_Op022-01-mm061-062_ES/v2_orch.m4a"
+     },
+     "+ octave": {
+      "piano": "audio/2-Saint_Op022-01-mm061-062_ES/v4_piano.m4a",
+      "orch": "audio/2-Saint_Op022-01-mm061-062_ES/v4_orch.m4a"
+     },
+     "+ asym loss": {
+      "piano": "audio/2-Saint_Op022-01-mm061-062_ES/v5_piano.m4a",
+      "orch": "audio/2-Saint_Op022-01-mm061-062_ES/v5_orch.m4a"
+     },
+     "distilled 5 MB": {
+      "piano": "audio/2-Saint_Op022-01-mm061-062_ES/student_piano.m4a",
+      "orch": "audio/2-Saint_Op022-01-mm061-062_ES/student_orch.m4a"
+     },
+     "ground truth": {
+      "piano": "audio/2-Saint_Op022-01-mm061-062_ES/ref_piano.m4a",
+      "orch": "audio/2-Saint_Op022-01-mm061-062_ES/ref_orch.m4a"
      }
     },
     "score": {}
