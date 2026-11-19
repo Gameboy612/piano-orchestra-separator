@@ -16,15 +16,18 @@ them.
 * A **built-in 10 s demo clip** — Mozart, Piano Concerto No. 20 in D minor, K. 466
   (Maria João Pires, Swedish Radio Symphony Orchestra, Daniel Harding), 21:24–21:34,
   mono 44.1 kHz.
-* Choose between three models:
+* Choose between four models (default: **HDMC student**):
 
   | model | size | params / stem | SI-SDR | speed (desktop) |
   |---|---:|---|---:|---|
-  | **Student** (UMX20 teacher) | 4.1 MB | 1.9 M, 2-layer LSTM | 3.50 dB | ~2× faster than realtime |
-  | **HDMC student** | 4.2 MB | 2.0 M, 2-layer LSTM | 3.52 dB | ~2× faster than realtime |
+  | **HDMC student** (default) | 4.2 MB | 1.9 M, 2-layer LSTM | 3.52 dB | ~2× faster than realtime |
+  | **UMX20 student** | 4.1 MB | 1.9 M, 2-layer LSTM | 3.50 dB | ~2× faster than realtime |
   | **UMX20 edge** | 15.3 MB | 7.3 M, 3-layer LSTM | 3.83 dB | ~0.7× realtime |
+  | **UMX20 base** | 16.6 MB | 8.3 M, 3-layer LSTM | 3.83 dB | ~0.7× realtime |
 
   SI-SDR is measured on 16 held-out piano-concerto excerpts against ground-truth stems.
+  The UMX20 edge/base pair is an exact A/B: both produce the same output, but base has the
+  dead rows still in place and is larger. That is the pruning demonstration.
 
 * **Progress bar** during processing.
 * Everything loads lazily — the shell is ~32 KB; a model script is fetched only when you pick
@@ -37,7 +40,7 @@ browser, using an int8-quantised neural network implemented in plain JavaScript.
 
 ## What is running
 
-* Student model distilled from the TASLP-2024 piano-concerto separator
+* UMX20 student model distilled from the TASLP-2024 piano-concerto separator
   (Özer & Müller, *Source Separation of Piano Concertos Using Musically Motivated Augmentation
   Techniques*), retrained to 2.0 M parameters per stem.
 * **int8 weights**, per-output-channel scales — 4.1 MB total for both stems, embedded in the page.
@@ -52,8 +55,8 @@ Verified headlessly in Node against the Python reference model:
 
 | model | stem | SI-SDR vs Python |
 |---|---|---:|
-| Student | piano | 55.5 / 57.1 dB (L/R) |
-| Student | orchestra | 50.7 / 54.2 dB |
+| UMX20 student | piano | 55.5 / 57.1 dB (L/R) |
+| UMX20 student | orchestra | 50.7 / 54.2 dB |
 | HDMC student | piano | 53.3 / 55.0 dB |
 | HDMC student | orchestra | 55.6 / 59.8 dB |
 | UMX20 edge | piano | 59.6 / 61.3 dB |
@@ -61,7 +64,7 @@ Verified headlessly in Node against the Python reference model:
 
 Those differences are 16-bit WAV quantisation, not algorithmic.
 
-Speed on a desktop CPU: **RTF ≈ 0.52** for the student model (12 s of audio in ~6 s), **RTF ≈ 1.49**
+Speed on a desktop CPU: **RTF ≈ 0.52** for the student models (12 s of audio in ~6 s), **RTF ≈ 1.49**
 for UMX20 edge. RTF below 1.0 is faster than realtime. A phone is typically 3–6× slower on this
 kind of float loop.
 

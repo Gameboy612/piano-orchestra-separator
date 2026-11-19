@@ -88,18 +88,18 @@ table.mx tr.grp2 th{background:#1e222a;padding-top:5px;padding-bottom:5px}
 <div class="card">
   <h2>2 &middot; Model</h2>
   <div class="models">
-    <label class="m on"><input type="radio" name="model" value="student" checked>
-      <b>Student</b> <span class="hint">&middot; 4.1 MB</span>
-      <div class="d">2-layer LSTM, 1.9 M params per stem, distilled from UMX20.<br>
-      <b>3.50 dB</b> SI-SDR &mdash; fastest.</div></label>
-    <label class="m"><input type="radio" name="model" value="hdmc-student">
+    <label class="m on"><input type="radio" name="model" value="hdmc-student" checked>
       <b>HDMC student</b> <span class="hint">&middot; 4.2 MB</span>
-      <div class="d">Same size, distilled from the much stronger HDMC teacher.<br>
-      <b>3.52 dB</b> SI-SDR &mdash; the better teacher bought 0.02 dB.</div></label>
+      <div class="d">2-layer LSTM, 1.9 M params per stem, distilled from HDMC.<br>
+      <b>3.52 dB</b> SI-SDR &mdash; best student, default.</div></label>
+    <label class="m"><input type="radio" name="model" value="student">
+      <b>UMX20 student</b> <span class="hint">&middot; 4.1 MB</span>
+      <div class="d">2-layer LSTM, 1.9 M params per stem, distilled from UMX20.<br>
+      <b>3.50 dB</b> SI-SDR &mdash; 0.02 dB behind HDMC.</div></label>
     <label class="m"><input type="radio" name="model" value="umx">
       <b>UMX20 edge</b> <span class="hint">&middot; 15.3 MB</span>
       <div class="d">3-layer LSTM, 7.3 M params per stem, dead rows pruned.<br>
-      <b>3.83 dB</b> SI-SDR &mdash; best quality.</div></label>
+      <b>3.83 dB</b> SI-SDR &mdash; best selectable quality, but ~3&times; slower.</div></label>
     <label class="m"><input type="radio" name="model" value="umx-base">
       <b>UMX20 base</b> <span class="hint">&middot; 16.6 MB</span>
       <div class="d">Unpruned, 8.3 M params per stem. <b>Sounds identical</b> to UMX20 edge
@@ -668,7 +668,7 @@ const $ = (id) => document.getElementById(id);
 let audio = null, dur = 0;
 const seps = {};      // model name -> Separator
 const MODELS = {
-  'student':      {label:'Student (UMX20 teacher)', weights:'4.1 MB', download:'5.4 MB'},
+  'student':      {label:'UMX20 student',            weights:'4.1 MB', download:'5.4 MB'},
   'hdmc-student': {label:'HDMC student',            weights:'4.2 MB', download:'5.5 MB'},
   'umx':          {label:'UMX20 edge (pruned)',     weights:'15.3 MB', download:'20.4 MB'},
   'umx-base':     {label:'UMX20 base (unpruned)',   weights:'16.6 MB', download:'22.6 MB'},
