@@ -32,6 +32,10 @@
      "+ cello/attack": {
       "piano": "audio/0-item_000000/v7_piano.m4a",
       "orch": "audio/0-item_000000/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/0-item_000000/hd_piano.m4a",
+      "orch": "audio/0-item_000000/hd_orch.m4a"
      }
     },
     "score": {
@@ -68,6 +72,10 @@
      "+ cello/attack": {
       "piano": "audio/0-item_000001/v7_piano.m4a",
       "orch": "audio/0-item_000001/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/0-item_000001/hd_piano.m4a",
+      "orch": "audio/0-item_000001/hd_orch.m4a"
      }
     },
     "score": {
@@ -104,6 +112,10 @@
      "+ cello/attack": {
       "piano": "audio/0-item_000003/v7_piano.m4a",
       "orch": "audio/0-item_000003/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/0-item_000003/hd_piano.m4a",
+      "orch": "audio/0-item_000003/hd_orch.m4a"
      }
     },
     "score": {
@@ -140,6 +152,10 @@
      "+ cello/attack": {
       "piano": "audio/0-item_000004/v7_piano.m4a",
       "orch": "audio/0-item_000004/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/0-item_000004/hd_piano.m4a",
+      "orch": "audio/0-item_000004/hd_orch.m4a"
      }
     },
     "score": {
@@ -176,6 +192,10 @@
      "+ cello/attack": {
       "piano": "audio/0-item_000005/v7_piano.m4a",
       "orch": "audio/0-item_000005/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/0-item_000005/hd_piano.m4a",
+      "orch": "audio/0-item_000005/hd_orch.m4a"
      }
     },
     "score": {
@@ -212,6 +232,10 @@
      "+ cello/attack": {
       "piano": "audio/0-item_000006/v7_piano.m4a",
       "orch": "audio/0-item_000006/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/0-item_000006/hd_piano.m4a",
+      "orch": "audio/0-item_000006/hd_orch.m4a"
      }
     },
     "score": {
@@ -248,6 +272,10 @@
      "+ cello/attack": {
       "piano": "audio/0-item_000012/v7_piano.m4a",
       "orch": "audio/0-item_000012/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/0-item_000012/hd_piano.m4a",
+      "orch": "audio/0-item_000012/hd_orch.m4a"
      }
     },
     "score": {
@@ -284,6 +312,10 @@
      "+ cello/attack": {
       "piano": "audio/0-item_000013/v7_piano.m4a",
       "orch": "audio/0-item_000013/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/0-item_000013/hd_piano.m4a",
+      "orch": "audio/0-item_000013/hd_orch.m4a"
      }
     },
     "score": {
@@ -320,6 +352,10 @@
      "+ cello/attack": {
       "piano": "audio/0-item_000015/v7_piano.m4a",
       "orch": "audio/0-item_000015/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/0-item_000015/hd_piano.m4a",
+      "orch": "audio/0-item_000015/hd_orch.m4a"
      }
     },
     "score": {
@@ -356,6 +392,10 @@
      "+ cello/attack": {
       "piano": "audio/0-item_000016/v7_piano.m4a",
       "orch": "audio/0-item_000016/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/0-item_000016/hd_piano.m4a",
+      "orch": "audio/0-item_000016/hd_orch.m4a"
      }
     },
     "score": {
@@ -398,6 +438,10 @@
      "+ cello/attack": {
       "piano": "audio/1-octave_melody_down/v7_piano.m4a",
       "orch": "audio/1-octave_melody_down/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/1-octave_melody_down/hd_piano.m4a",
+      "orch": "audio/1-octave_melody_down/hd_orch.m4a"
      }
     },
     "score": {}
@@ -431,6 +475,10 @@
      "+ cello/attack": {
       "piano": "audio/1-octave_melody_up/v7_piano.m4a",
       "orch": "audio/1-octave_melody_up/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/1-octave_melody_up/hd_piano.m4a",
+      "orch": "audio/1-octave_melody_up/hd_orch.m4a"
      }
     },
     "score": {}
@@ -464,6 +512,10 @@
      "+ cello/attack": {
       "piano": "audio/1-octave_mix/v7_piano.m4a",
       "orch": "audio/1-octave_mix/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/1-octave_mix/hd_piano.m4a",
+      "orch": "audio/1-octave_mix/hd_orch.m4a"
      }
     },
     "score": {}
@@ -497,6 +549,10 @@
      "+ cello/attack": {
       "piano": "audio/1-octave_split_tutti/v7_piano.m4a",
       "orch": "audio/1-octave_split_tutti/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/1-octave_split_tutti/hd_piano.m4a",
+      "orch": "audio/1-octave_split_tutti/hd_orch.m4a"
      }
     },
     "score": {}
@@ -530,6 +586,10 @@
      "+ cello/attack": {
       "piano": "audio/1-unison_melody/v7_piano.m4a",
       "orch": "audio/1-unison_melody/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/1-unison_melody/hd_piano.m4a",
+      "orch": "audio/1-unison_melody/hd_orch.m4a"
      }
     },
     "score": {}
@@ -570,6 +630,10 @@
       "piano": "audio/2-Mozart-K.466-Pires-your-website-clip/v7_piano.m4a",
       "orch": "audio/2-Mozart-K.466-Pires-your-website-clip/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Mozart-K.466-Pires-your-website-clip/hd_piano.m4a",
+      "orch": "audio/2-Mozart-K.466-Pires-your-website-clip/hd_orch.m4a"
+     },
      "distilled 5 MB": {
       "piano": "audio/2-Mozart-K.466-Pires-your-website-clip/student_piano.m4a",
       "orch": "audio/2-Mozart-K.466-Pires-your-website-clip/student_orch.m4a"
@@ -606,6 +670,10 @@
      "+ cello/attack": {
       "piano": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/v7_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/hd_piano.m4a",
+      "orch": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/hd_orch.m4a"
      },
      "distilled 5 MB": {
       "piano": "audio/2-Bach_BWV1056-01-mm001-008_YO-V1/student_piano.m4a",
@@ -648,6 +716,10 @@
       "piano": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/v7_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/hd_piano.m4a",
+      "orch": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/hd_orch.m4a"
+     },
      "distilled 5 MB": {
       "piano": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/student_piano.m4a",
       "orch": "audio/2-Bach_BWV1056-01-mm047-054_YO-V1/student_orch.m4a"
@@ -688,6 +760,10 @@
      "+ cello/attack": {
       "piano": "audio/2-Beethoven_Op015-01-mm118-125_MM/v7_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm118-125_MM/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Beethoven_Op015-01-mm118-125_MM/hd_piano.m4a",
+      "orch": "audio/2-Beethoven_Op015-01-mm118-125_MM/hd_orch.m4a"
      },
      "distilled 5 MB": {
       "piano": "audio/2-Beethoven_Op015-01-mm118-125_MM/student_piano.m4a",
@@ -730,6 +806,10 @@
       "piano": "audio/2-Beethoven_Op015-01-mm295-302_MM/v7_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm295-302_MM/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Beethoven_Op015-01-mm295-302_MM/hd_piano.m4a",
+      "orch": "audio/2-Beethoven_Op015-01-mm295-302_MM/hd_orch.m4a"
+     },
      "distilled 5 MB": {
       "piano": "audio/2-Beethoven_Op015-01-mm295-302_MM/student_piano.m4a",
       "orch": "audio/2-Beethoven_Op015-01-mm295-302_MM/student_orch.m4a"
@@ -770,6 +850,10 @@
      "+ cello/attack": {
       "piano": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/v7_piano.m4a",
       "orch": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/hd_piano.m4a",
+      "orch": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/hd_orch.m4a"
      },
      "distilled 5 MB": {
       "piano": "audio/2-Beethoven_Op019-01-mm117-124_ES-V1/student_piano.m4a",
@@ -812,6 +896,10 @@
       "piano": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/v7_piano.m4a",
       "orch": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/hd_piano.m4a",
+      "orch": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/hd_orch.m4a"
+     },
      "distilled 5 MB": {
       "piano": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/student_piano.m4a",
       "orch": "audio/2-Beethoven_Op037-01-mm148-154_ES-V1/student_orch.m4a"
@@ -852,6 +940,10 @@
      "+ cello/attack": {
       "piano": "audio/2-Chopin_Op021-03-mm145-157_ES/v7_piano.m4a",
       "orch": "audio/2-Chopin_Op021-03-mm145-157_ES/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Chopin_Op021-03-mm145-157_ES/hd_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm145-157_ES/hd_orch.m4a"
      },
      "distilled 5 MB": {
       "piano": "audio/2-Chopin_Op021-03-mm145-157_ES/student_piano.m4a",
@@ -894,6 +986,10 @@
       "piano": "audio/2-Chopin_Op021-03-mm249-260_ES/v7_piano.m4a",
       "orch": "audio/2-Chopin_Op021-03-mm249-260_ES/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Chopin_Op021-03-mm249-260_ES/hd_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm249-260_ES/hd_orch.m4a"
+     },
      "distilled 5 MB": {
       "piano": "audio/2-Chopin_Op021-03-mm249-260_ES/student_piano.m4a",
       "orch": "audio/2-Chopin_Op021-03-mm249-260_ES/student_orch.m4a"
@@ -934,6 +1030,10 @@
      "+ cello/attack": {
       "piano": "audio/2-Chopin_Op021-03-mm411-424_ES/v7_piano.m4a",
       "orch": "audio/2-Chopin_Op021-03-mm411-424_ES/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Chopin_Op021-03-mm411-424_ES/hd_piano.m4a",
+      "orch": "audio/2-Chopin_Op021-03-mm411-424_ES/hd_orch.m4a"
      },
      "distilled 5 MB": {
       "piano": "audio/2-Chopin_Op021-03-mm411-424_ES/student_piano.m4a",
@@ -976,6 +1076,10 @@
       "piano": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/v7_piano.m4a",
       "orch": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/hd_piano.m4a",
+      "orch": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/hd_orch.m4a"
+     },
      "distilled 5 MB": {
       "piano": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/student_piano.m4a",
       "orch": "audio/2-Mendelssohn_MWVO007-01-mm023-029_ES-V1/student_orch.m4a"
@@ -1016,6 +1120,10 @@
      "+ cello/attack": {
       "piano": "audio/2-Mozart_KV414-01-mm180-186_YO/v7_piano.m4a",
       "orch": "audio/2-Mozart_KV414-01-mm180-186_YO/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Mozart_KV414-01-mm180-186_YO/hd_piano.m4a",
+      "orch": "audio/2-Mozart_KV414-01-mm180-186_YO/hd_orch.m4a"
      },
      "distilled 5 MB": {
       "piano": "audio/2-Mozart_KV414-01-mm180-186_YO/student_piano.m4a",
@@ -1058,6 +1166,10 @@
       "piano": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/v7_piano.m4a",
       "orch": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/hd_piano.m4a",
+      "orch": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/hd_orch.m4a"
+     },
      "distilled 5 MB": {
       "piano": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/student_piano.m4a",
       "orch": "audio/2-Mozart_KV467-02-mm030-032_YO-V2/student_orch.m4a"
@@ -1098,6 +1210,10 @@
      "+ cello/attack": {
       "piano": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/v7_piano.m4a",
       "orch": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/hd_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/hd_orch.m4a"
      },
      "distilled 5 MB": {
       "piano": "audio/2-Rachmaninoff_Op018-01-mm114-120_JL/student_piano.m4a",
@@ -1140,6 +1256,10 @@
       "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/v7_piano.m4a",
       "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/hd_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/hd_orch.m4a"
+     },
      "distilled 5 MB": {
       "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/student_piano.m4a",
       "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V1/student_orch.m4a"
@@ -1181,6 +1301,10 @@
       "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/v7_piano.m4a",
       "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/hd_piano.m4a",
+      "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/hd_orch.m4a"
+     },
      "distilled 5 MB": {
       "piano": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/student_piano.m4a",
       "orch": "audio/2-Rachmaninoff_Op030-01-mm033-038_ES-V2/student_orch.m4a"
@@ -1221,6 +1345,10 @@
      "+ cello/attack": {
       "piano": "audio/2-Saint_Op022-01-mm061-062_ES/v7_piano.m4a",
       "orch": "audio/2-Saint_Op022-01-mm061-062_ES/v7_orch.m4a"
+     },
+     "hdemucs (transfer)": {
+      "piano": "audio/2-Saint_Op022-01-mm061-062_ES/hd_piano.m4a",
+      "orch": "audio/2-Saint_Op022-01-mm061-062_ES/hd_orch.m4a"
      },
      "distilled 5 MB": {
       "piano": "audio/2-Saint_Op022-01-mm061-062_ES/student_piano.m4a",
@@ -1269,15 +1397,16 @@
       "piano": "audio/3-item_000000/v7_piano.m4a",
       "orch": "audio/3-item_000000/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/3-item_000000/hd_piano.m4a",
+      "orch": "audio/3-item_000000/hd_orch.m4a"
+     },
      "ground truth": {
       "piano": "audio/3-item_000000/ref_piano.m4a",
       "orch": "audio/3-item_000000/ref_orch.m4a"
      }
     },
-    "score": {
-     "a": -2.7,
-     "b": 1.54
-    }
+    "score": {}
    },
    {
     "id": "item_000001",
@@ -1309,15 +1438,16 @@
       "piano": "audio/3-item_000001/v7_piano.m4a",
       "orch": "audio/3-item_000001/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/3-item_000001/hd_piano.m4a",
+      "orch": "audio/3-item_000001/hd_orch.m4a"
+     },
      "ground truth": {
       "piano": "audio/3-item_000001/ref_piano.m4a",
       "orch": "audio/3-item_000001/ref_orch.m4a"
      }
     },
-    "score": {
-     "a": 4.41,
-     "b": 4.7
-    }
+    "score": {}
    },
    {
     "id": "item_000002",
@@ -1349,15 +1479,16 @@
       "piano": "audio/3-item_000002/v7_piano.m4a",
       "orch": "audio/3-item_000002/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/3-item_000002/hd_piano.m4a",
+      "orch": "audio/3-item_000002/hd_orch.m4a"
+     },
      "ground truth": {
       "piano": "audio/3-item_000002/ref_piano.m4a",
       "orch": "audio/3-item_000002/ref_orch.m4a"
      }
     },
-    "score": {
-     "a": -2.9,
-     "b": 4.18
-    }
+    "score": {}
    },
    {
     "id": "item_000003",
@@ -1389,15 +1520,16 @@
       "piano": "audio/3-item_000003/v7_piano.m4a",
       "orch": "audio/3-item_000003/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/3-item_000003/hd_piano.m4a",
+      "orch": "audio/3-item_000003/hd_orch.m4a"
+     },
      "ground truth": {
       "piano": "audio/3-item_000003/ref_piano.m4a",
       "orch": "audio/3-item_000003/ref_orch.m4a"
      }
     },
-    "score": {
-     "a": 0.79,
-     "b": 3.56
-    }
+    "score": {}
    },
    {
     "id": "item_000004",
@@ -1429,15 +1561,16 @@
       "piano": "audio/3-item_000004/v7_piano.m4a",
       "orch": "audio/3-item_000004/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/3-item_000004/hd_piano.m4a",
+      "orch": "audio/3-item_000004/hd_orch.m4a"
+     },
      "ground truth": {
       "piano": "audio/3-item_000004/ref_piano.m4a",
       "orch": "audio/3-item_000004/ref_orch.m4a"
      }
     },
-    "score": {
-     "a": -0.29,
-     "b": 2.27
-    }
+    "score": {}
    },
    {
     "id": "item_000005",
@@ -1469,15 +1602,16 @@
       "piano": "audio/3-item_000005/v7_piano.m4a",
       "orch": "audio/3-item_000005/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/3-item_000005/hd_piano.m4a",
+      "orch": "audio/3-item_000005/hd_orch.m4a"
+     },
      "ground truth": {
       "piano": "audio/3-item_000005/ref_piano.m4a",
       "orch": "audio/3-item_000005/ref_orch.m4a"
      }
     },
-    "score": {
-     "a": -0.11,
-     "b": 1.76
-    }
+    "score": {}
    },
    {
     "id": "item_000006",
@@ -1509,15 +1643,16 @@
       "piano": "audio/3-item_000006/v7_piano.m4a",
       "orch": "audio/3-item_000006/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/3-item_000006/hd_piano.m4a",
+      "orch": "audio/3-item_000006/hd_orch.m4a"
+     },
      "ground truth": {
       "piano": "audio/3-item_000006/ref_piano.m4a",
       "orch": "audio/3-item_000006/ref_orch.m4a"
      }
     },
-    "score": {
-     "a": 0.43,
-     "b": 4.33
-    }
+    "score": {}
    },
    {
     "id": "item_000007",
@@ -1549,15 +1684,16 @@
       "piano": "audio/3-item_000007/v7_piano.m4a",
       "orch": "audio/3-item_000007/v7_orch.m4a"
      },
+     "hdemucs (transfer)": {
+      "piano": "audio/3-item_000007/hd_piano.m4a",
+      "orch": "audio/3-item_000007/hd_orch.m4a"
+     },
      "ground truth": {
       "piano": "audio/3-item_000007/ref_piano.m4a",
       "orch": "audio/3-item_000007/ref_orch.m4a"
      }
     },
-    "score": {
-     "a": 0.21,
-     "b": 2.3
-    }
+    "score": {}
    }
   ]
  },
